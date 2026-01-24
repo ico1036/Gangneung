@@ -1,0 +1,20 @@
+# Claude Code 설정 및 스킬 (개인 설정)
+.claude/
+*.skill
+
+# OS 파일
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.py[cod]
+.env

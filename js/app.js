@@ -31,12 +31,58 @@ let currentRestaurantFilter = 'all';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', async () => {
+  // Setup intro page
+  setupIntroPage();
+
+  // Load data
   await Promise.all([loadCafesData(), loadRestaurantsData()]);
   renderCafes();
   renderRestaurants();
   setupEventListeners();
   setupTabNavigation();
 });
+
+// Setup Intro Page
+function setupIntroPage() {
+  const introPage = document.getElementById('introPage');
+  const mainSite = document.getElementById('mainSite');
+  const enterBtn = document.getElementById('enterSite');
+
+  if (!introPage || !mainSite || !enterBtn) return;
+
+  // Check if user has visited before (optional: skip intro)
+  // const hasVisited = localStorage.getItem('hasVisitedGangneung');
+  // if (hasVisited) {
+  //   introPage.classList.add('hidden');
+  //   mainSite.classList.add('visible');
+  //   return;
+  // }
+
+  enterBtn.addEventListener('click', () => {
+    // Smooth transition
+    introPage.style.opacity = '0';
+    introPage.style.transform = 'translateY(-20px)';
+    introPage.style.transition = 'all 0.5s ease';
+
+    setTimeout(() => {
+      introPage.classList.add('hidden');
+      mainSite.classList.add('visible');
+      mainSite.style.opacity = '0';
+      mainSite.style.transform = 'translateY(20px)';
+
+      requestAnimationFrame(() => {
+        mainSite.style.transition = 'all 0.5s ease';
+        mainSite.style.opacity = '1';
+        mainSite.style.transform = 'translateY(0)';
+      });
+
+      // Optional: remember visit
+      // localStorage.setItem('hasVisitedGangneung', 'true');
+
+      window.scrollTo(0, 0);
+    }, 500);
+  });
+}
 
 // Load cafes data from JSON
 async function loadCafesData() {

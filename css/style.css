@@ -548,6 +548,52 @@
   transform: translateX(4px);
 }
 
+/* Intro Wrapup AI Section */
+.intro-wrapup {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.wrapup-box {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 24px 32px;
+  max-width: 600px;
+}
+
+.wrapup-box h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.wrapup-box p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+  word-break: break-all;
+}
+
+.wrapup-box a {
+  color: #fbbf24;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.wrapup-box a:hover {
+  color: #fcd34d;
+  text-decoration: underline;
+}
+
+.wrapup-instruction {
+  font-size: 0.85rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin-top: 8px;
+}
+
 /* Main Site Hidden by Default */
 .main-site {
   display: none;

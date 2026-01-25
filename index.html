@@ -18,10 +18,11 @@
       <nav class="nav">
         <a href="#" class="logo">
           <span class="logo-icon">&#9749;</span>
-          <span class="logo-text">안목 카페거리</span>
+          <span class="logo-text">강릉 여행 가이드</span>
         </a>
         <ul class="nav-links">
-          <li><a href="#cafes">카페 목록</a></li>
+          <li><a href="#cafes" class="nav-section-link" data-page="cafe">카페 목록</a></li>
+          <li><a href="#restaurants" class="nav-section-link" data-page="restaurant">식당 목록</a></li>
           <li><a href="#info">여행 정보</a></li>
           <li><a href="#nightlife">야식/맥주</a></li>
         </ul>
@@ -33,6 +34,25 @@
       </nav>
     </div>
   </header>
+
+  <!-- Main Tab Navigation -->
+  <div class="main-tabs">
+    <div class="container">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="cafe">
+          <span class="tab-icon">&#9749;</span>
+          <span class="tab-text">안목 카페거리</span>
+        </button>
+        <button class="tab-btn" data-tab="restaurant">
+          <span class="tab-icon">&#127858;</span>
+          <span class="tab-text">경포 식당</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab Content: Cafe -->
+  <div class="tab-content active" data-tab-content="cafe">
 
   <!-- Hero Section -->
   <section class="hero">
@@ -185,6 +205,101 @@
       </div>
     </div>
   </section>
+
+  </div><!-- End Tab Content: Cafe -->
+
+  <!-- Tab Content: Restaurant -->
+  <div class="tab-content" data-tab-content="restaurant">
+
+  <!-- Restaurant Hero Section -->
+  <section class="hero restaurant-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">경포 맛집 가이드</h1>
+      <p class="hero-subtitle">오죽헌 &amp; 참소리박물관 근처<br>일요일에도 영업하는 검증된 식당</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" id="totalRestaurants">10</span>
+          <span class="stat-label">검증된 식당</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">4</span>
+          <span class="stat-label">핫플레이스</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2026.01.25</span>
+          <span class="stat-label">마지막 업데이트</span>
+        </div>
+      </div>
+      <a href="#restaurants" class="hero-cta">식당 둘러보기</a>
+    </div>
+  </section>
+
+  <!-- Restaurant Quick Filter -->
+  <section class="quick-filter restaurant-filter">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-restaurant-filter="all">전체</button>
+        <button class="filter-btn" data-restaurant-filter="ojukheon">오죽헌 근처</button>
+        <button class="filter-btn" data-restaurant-filter="chamsori">참소리박물관 근처</button>
+        <button class="filter-btn hotplace-filter" data-restaurant-filter="hotplace">핫플</button>
+        <button class="filter-btn" data-restaurant-filter="group">40인 단체</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant List -->
+  <section id="restaurants" class="restaurants-section">
+    <div class="container">
+      <h2 class="section-title">일요일 영업 식당</h2>
+      <p class="section-desc">모든 정보는 네이버 지도를 통해 직접 검증했습니다 (일요일 아침/점심 영업 확인)</p>
+
+      <!-- Sort Options -->
+      <div class="sort-options">
+        <select id="restaurantSortSelect">
+          <option value="reviews">리뷰 많은순</option>
+          <option value="name">이름순</option>
+        </select>
+      </div>
+
+      <!-- Restaurant Grid -->
+      <div class="restaurant-grid" id="restaurantGrid">
+        <!-- Restaurants will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant Info Section -->
+  <section class="info-section restaurant-info">
+    <div class="container">
+      <h2 class="section-title">관광지 정보</h2>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">&#127970;</div>
+          <h3>오죽헌</h3>
+          <p>율곡 이이와 신사임당의 생가<br>조선시대 대표 유적지<br>입장료: 성인 3,000원</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">&#127911;</div>
+          <h3>참소리박물관</h3>
+          <p>세계적 축음기/오디오 박물관<br>에디슨과학박물관 연계<br>경포호 앞 위치</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">&#9888;</div>
+          <h3>주의사항</h3>
+          <p>수요일 정기휴무 식당 다수<br>브레이크타임 확인 필수<br>핫플은 웨이팅 가능성</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">&#128663;</div>
+          <h3>이동 팁</h3>
+          <p>오죽헌 ↔ 참소리박물관<br>차량 10분 거리<br>경포호 드라이브 추천</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- End Tab Content: Restaurant -->
 
   <!-- Footer -->
   <footer class="footer">

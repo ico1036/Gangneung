@@ -1,27 +1,41 @@
 /**
- * 안목 카페거리 완벽가이드 - JavaScript
+ * 강릉 여행 가이드 - JavaScript
+ * 안목 카페거리 + 경포 식당
  */
 
-// Cafe Data (loaded from JSON)
+// Data (loaded from JSON)
 let cafesData = [];
+let restaurantsData = [];
 
 // DOM Elements
 const cafeGrid = document.getElementById('cafeGrid');
 const sortSelect = document.getElementById('sortSelect');
-const filterButtons = document.querySelectorAll('.filter-btn');
+const filterButtons = document.querySelectorAll('.filter-btn[data-filter]');
 const modal = document.getElementById('cafeModal');
 const modalBody = document.getElementById('modalBody');
 const modalClose = document.querySelector('.modal-close');
 const modalOverlay = document.querySelector('.modal-overlay');
 
+// Restaurant DOM Elements
+const restaurantGrid = document.getElementById('restaurantGrid');
+const restaurantSortSelect = document.getElementById('restaurantSortSelect');
+const restaurantFilterButtons = document.querySelectorAll('.filter-btn[data-restaurant-filter]');
+
+// Tab DOM Elements
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
 // Current filter state
 let currentFilter = 'all';
+let currentRestaurantFilter = 'all';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', async () => {
-  await loadCafesData();
+  await Promise.all([loadCafesData(), loadRestaurantsData()]);
   renderCafes();
+  renderRestaurants();
   setupEventListeners();
+  setupTabNavigation();
 });
 
 // Load cafes data from JSON
@@ -36,6 +50,45 @@ async function loadCafesData() {
     // Fallback: use embedded data
     cafesData = getEmbeddedCafesData();
   }
+}
+
+// Load restaurants data from JSON
+async function loadRestaurantsData() {
+  try {
+    const response = await fetch('data/restaurants.json');
+    const data = await response.json();
+    restaurantsData = data.restaurants;
+    const totalEl = document.getElementById('totalRestaurants');
+    if (totalEl) totalEl.textContent = restaurantsData.length;
+  } catch (error) {
+    console.error('Failed to load restaurants data:', error);
+    restaurantsData = [];
+  }
+}
+
+// Setup Tab Navigation
+function setupTabNavigation() {
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tabName = btn.dataset.tab;
+
+      // Update button states
+      tabButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Update content visibility
+      tabContents.forEach(content => {
+        if (content.dataset.tabContent === tabName) {
+          content.classList.add('active');
+        } else {
+          content.classList.remove('active');
+        }
+      });
+
+      // Scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
 }
 
 // Embedded cafes data as fallback
@@ -377,7 +430,7 @@ function getEmbeddedCafesData() {
 
 // Setup event listeners
 function setupEventListeners() {
-  // Filter buttons
+  // Cafe Filter buttons
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       filterButtons.forEach(b => b.classList.remove('active'));
@@ -387,8 +440,25 @@ function setupEventListeners() {
     });
   });
 
-  // Sort select
-  sortSelect.addEventListener('change', renderCafes);
+  // Cafe Sort select
+  if (sortSelect) {
+    sortSelect.addEventListener('change', renderCafes);
+  }
+
+  // Restaurant Filter buttons
+  restaurantFilterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      restaurantFilterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentRestaurantFilter = btn.dataset.restaurantFilter;
+      renderRestaurants();
+    });
+  });
+
+  // Restaurant Sort select
+  if (restaurantSortSelect) {
+    restaurantSortSelect.addEventListener('change', renderRestaurants);
+  }
 
   // Modal close
   modalClose.addEventListener('click', closeModal);
@@ -661,6 +731,220 @@ function formatHoursKey(key) {
 function closeModal() {
   modal.classList.remove('active');
   document.body.style.overflow = '';
+}
+
+// ========================================
+// Restaurant Functions
+// ========================================
+
+// Filter restaurants based on current filter
+function filterRestaurants(restaurants) {
+  if (currentRestaurantFilter === 'all') return restaurants;
+
+  return restaurants.filter(restaurant => {
+    switch (currentRestaurantFilter) {
+      case 'ojukheon':
+        return restaurant.location === 'ojukheon';
+      case 'chamsori':
+        return restaurant.location === 'chamsori';
+      case 'hotplace':
+        return restaurant.is_hotplace;
+      case 'group':
+        return restaurant.group_friendly;
+      default:
+        return true;
+    }
+  });
+}
+
+// Sort restaurants based on selected option
+function sortRestaurants(restaurants) {
+  if (!restaurantSortSelect) return restaurants;
+  const sortBy = restaurantSortSelect.value;
+
+  return [...restaurants].sort((a, b) => {
+    switch (sortBy) {
+      case 'reviews':
+        return (b.naver_reviews || 0) - (a.naver_reviews || 0);
+      case 'name':
+        return a.name.localeCompare(b.name, 'ko');
+      default:
+        return 0;
+    }
+  });
+}
+
+// Render restaurant cards
+function renderRestaurants() {
+  if (!restaurantGrid) return;
+
+  let restaurants = filterRestaurants(restaurantsData);
+  restaurants = sortRestaurants(restaurants);
+
+  restaurantGrid.innerHTML = restaurants.map(restaurant => createRestaurantCard(restaurant)).join('');
+
+  // Add click handlers to cards
+  document.querySelectorAll('.restaurant-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const restaurantId = parseInt(card.dataset.id);
+      const restaurant = restaurantsData.find(r => r.id === restaurantId);
+      if (restaurant) openRestaurantModal(restaurant);
+    });
+  });
+}
+
+// Create restaurant card HTML
+function createRestaurantCard(restaurant) {
+  const sundayHours = restaurant.hours?.sunday || restaurant.hours?.daily || '영업시간 확인 필요';
+  const reviews = restaurant.naver_reviews ? restaurant.naver_reviews.toLocaleString() : '-';
+  const tags = createRestaurantTags(restaurant);
+  const hotplaceBadge = restaurant.is_hotplace ? '<div class="hotplace-badge">HOT</div>' : '';
+  const hotplaceClass = restaurant.is_hotplace ? 'hotplace' : '';
+
+  let breakTimeHtml = '';
+  if (restaurant.break_time) {
+    breakTimeHtml = `<p class="restaurant-break">브레이크타임 ${restaurant.break_time}</p>`;
+  }
+
+  let closedDaysHtml = '';
+  if (restaurant.closed_days && restaurant.closed_days !== '연중무휴') {
+    closedDaysHtml = `<p class="restaurant-closed">${restaurant.closed_days} 휴무</p>`;
+  }
+
+  return `
+    <article class="restaurant-card ${hotplaceClass}" data-id="${restaurant.id}">
+      ${hotplaceBadge}
+      <div class="restaurant-header">
+        <h3 class="restaurant-name">${restaurant.name}</h3>
+        <p class="restaurant-category">
+          ${restaurant.category}
+          <span class="restaurant-location-badge">${restaurant.location_name}</span>
+        </p>
+      </div>
+      <div class="restaurant-body">
+        <p class="restaurant-address">${restaurant.address}</p>
+        <p class="restaurant-hours sunday">일요일 ${sundayHours}</p>
+        ${breakTimeHtml}
+        ${closedDaysHtml}
+        <div class="restaurant-tags">${tags}</div>
+      </div>
+      <div class="restaurant-footer">
+        <span class="restaurant-reviews">리뷰 <strong>${reviews}</strong>개</span>
+        <a href="${restaurant.naver_link}" target="_blank" rel="noopener" class="restaurant-link" onclick="event.stopPropagation();">
+          네이버 지도 →
+        </a>
+      </div>
+    </article>
+  `;
+}
+
+// Create tags HTML for restaurant
+function createRestaurantTags(restaurant) {
+  const tags = [];
+  const features = restaurant.features || [];
+
+  if (restaurant.group_friendly) {
+    tags.push('<span class="restaurant-tag group">40인 단체</span>');
+  }
+  if (restaurant.is_hotplace) {
+    tags.push('<span class="restaurant-tag hotplace">핫플</span>');
+  }
+  if (features.includes('아침식사가능')) {
+    tags.push('<span class="restaurant-tag breakfast">아침 가능</span>');
+  }
+  if (features.includes('연중무휴') || restaurant.closed_days === '연중무휴') {
+    tags.push('<span class="restaurant-tag always-open">연중무휴</span>');
+  }
+
+  return tags.slice(0, 4).join('');
+}
+
+// Open modal with restaurant details
+function openRestaurantModal(restaurant) {
+  const menuItems = (restaurant.signature_menu || []).map(item => `
+    <div class="modal-menu-item">
+      <span class="modal-menu-name">${item.name}</span>
+      <span class="modal-menu-price">${item.description || ''}</span>
+    </div>
+  `).join('');
+
+  const highlights = (restaurant.highlights || []).map(h => `<li>${h}</li>`).join('');
+  const tags = (restaurant.features || []).map(f => `<span class="cafe-tag">${f}</span>`).join('');
+
+  const sundayHours = restaurant.hours?.sunday || restaurant.hours?.daily || '영업시간 확인 필요';
+
+  let hoursHtml = `
+    <div class="modal-info-row">
+      <span class="modal-info-label">☀️ 일요일</span>
+      <span style="color: #10B981; font-weight: 600;">${sundayHours}</span>
+    </div>
+  `;
+
+  if (restaurant.break_time) {
+    hoursHtml += `
+      <div class="modal-info-row">
+        <span class="modal-info-label">⏸️ 브레이크</span>
+        <span style="color: #F59E0B;">${restaurant.break_time}</span>
+      </div>
+    `;
+  }
+
+  if (restaurant.closed_days && restaurant.closed_days !== '연중무휴') {
+    hoursHtml += `
+      <div class="modal-info-row">
+        <span class="modal-info-label">🚫 정기휴무</span>
+        <span style="color: #EF4444;">${restaurant.closed_days}</span>
+      </div>
+    `;
+  }
+
+  modalBody.innerHTML = `
+    <div class="modal-header" style="background: linear-gradient(135deg, #065F46 0%, #10B981 100%);">
+      <h2 class="modal-title">${restaurant.name}</h2>
+      <p class="modal-category">${restaurant.category} · ${restaurant.location_name} 근처</p>
+    </div>
+
+    <div class="modal-section">
+      <h4>기본 정보</h4>
+      <div class="modal-info-row">
+        <span class="modal-info-label">📍 주소</span>
+        <span>${restaurant.address}</span>
+      </div>
+      ${hoursHtml}
+    </div>
+
+    ${menuItems ? `
+    <div class="modal-section">
+      <h4>대표 메뉴</h4>
+      ${menuItems}
+    </div>` : ''}
+
+    <div class="modal-section">
+      <h4>특징</h4>
+      <div class="modal-tags">${tags}</div>
+    </div>
+
+    ${highlights ? `
+    <div class="modal-section">
+      <h4>추천 포인트</h4>
+      <ul class="modal-highlights">${highlights}</ul>
+    </div>` : ''}
+
+    <div class="modal-section">
+      <h4>리뷰</h4>
+      <div class="modal-info-row">
+        ${restaurant.naver_reviews ? `<span>리뷰 ${restaurant.naver_reviews.toLocaleString()}개</span>` : ''}
+        ${restaurant.is_hotplace ? `<span style="color: #EF4444; margin-left: 12px;">🔥 핫플레이스</span>` : ''}
+      </div>
+    </div>
+
+    <a href="${restaurant.naver_link}" target="_blank" rel="noopener" class="modal-cta" style="background: #10B981;">
+      네이버 지도에서 보기 →
+    </a>
+  `;
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
 }
 
 // Smooth scroll for anchor links

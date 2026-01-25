@@ -1,0 +1,330 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "강릉한정식강릉밥상 오죽헌본점",
+      "category": "한정식",
+      "location": "ojukheon",
+      "location_name": "오죽헌",
+      "address": "강원 강릉시 율곡로 3056",
+      "phone": null,
+      "hours": {
+        "sunday": "11:00 - 20:00",
+        "daily": "11:00 - 20:00"
+      },
+      "break_time": "15:30 - 17:00",
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "한정식", "description": "강릉 전통 한정식" }
+      ],
+      "price_range": "₩₩₩",
+      "features": ["단체이용가능", "주차"],
+      "naver_reviews": 78,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/강릉한정식강릉밥상%20오죽헌본점",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "오죽헌 도보 10분 거리",
+        "단체 이용 가능",
+        "브레이크타임 15:30-17:00"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "강릉맛드린 순두부해장국&감자탕",
+      "category": "한식",
+      "location": "ojukheon",
+      "location_name": "오죽헌",
+      "address": "강원 강릉시 율곡로 3088",
+      "phone": null,
+      "hours": {
+        "sunday": "08:30 - 22:00",
+        "daily": "08:30 - 22:00"
+      },
+      "break_time": null,
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "순두부해장국", "description": "부드러운 초당순두부로 만든 해장국" },
+        { "name": "감자탕", "description": "푸짐한 뼈다귀 감자탕" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능", "주차", "아침식사가능"],
+      "naver_reviews": 4492,
+      "is_hotplace": true,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/강릉맛드린%20순두부해장국",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "오죽헌 바로 옆 위치",
+        "아침 8시 30분부터 영업",
+        "리뷰 4,400+ 핫플레이스",
+        "단체 이용 가능"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "민속옹심이막국수",
+      "category": "막국수",
+      "location": "ojukheon",
+      "location_name": "오죽헌",
+      "address": "강원 강릉시 죽헌길 46",
+      "phone": null,
+      "hours": {
+        "sunday": "10:00 - 20:00",
+        "daily": "10:00 - 20:00"
+      },
+      "break_time": "15:00 - 16:00",
+      "closed_days": "목요일",
+      "signature_menu": [
+        { "name": "막국수", "description": "시원한 동치미 육수 막국수" },
+        { "name": "옹심이", "description": "쫄깃한 감자 옹심이" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능", "주차", "넓은홀"],
+      "naver_reviews": 1826,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/민속옹심이막국수",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "오죽헌 도보 가능",
+        "40명 이상 단체 수용 가능한 넓은 홀",
+        "목요일 정기휴무"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "경포막국수",
+      "category": "막국수",
+      "location": "ojukheon",
+      "location_name": "오죽헌",
+      "address": "강원 강릉시 난설헌로 150",
+      "phone": null,
+      "hours": {
+        "sunday": "10:30 - 20:00",
+        "daily": "10:30 - 20:00"
+      },
+      "break_time": "15:30 - 17:00",
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "막국수", "description": "강릉 전통 막국수" },
+        { "name": "수육", "description": "부드러운 보쌈 수육" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능", "주차"],
+      "naver_reviews": 187,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/경포막국수",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "오죽헌 근처 막국수 전문점",
+        "단체 이용 가능",
+        "브레이크타임 15:30-17:00"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "봄바스타코 본점",
+      "category": "멕시칸",
+      "location": "ojukheon",
+      "location_name": "오죽헌",
+      "address": "강원 강릉시 율곡로 3030",
+      "phone": null,
+      "hours": {
+        "sunday": "11:30 - 22:00",
+        "daily": "11:30 - 22:00"
+      },
+      "break_time": "15:00 - 17:00",
+      "closed_days": "월요일",
+      "signature_menu": [
+        { "name": "타코", "description": "정통 멕시칸 타코" },
+        { "name": "부리또", "description": "푸짐한 부리또" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능", "데이트", "SNS인기"],
+      "naver_reviews": 1655,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/봄바스타코%20본점",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "오죽헌 근처 멕시칸 음식점",
+        "단체 이용 가능",
+        "월요일 정기휴무"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "호수정 한정식 강릉본점",
+      "category": "한정식",
+      "location": "chamsori",
+      "location_name": "참소리박물관",
+      "address": "강원 강릉시 저동골길 6 1층",
+      "phone": null,
+      "hours": {
+        "sunday": "10:30 - 21:00",
+        "daily": "10:30 - 21:00"
+      },
+      "break_time": "15:30 - 17:00",
+      "closed_days": "수요일",
+      "signature_menu": [
+        { "name": "한정식", "description": "강릉 전통 코스 한정식" }
+      ],
+      "price_range": "₩₩₩",
+      "features": ["단체이용가능", "주차", "예약가능"],
+      "naver_reviews": 242,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/호수정%20한정식%20강릉본점",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "참소리박물관 도보 거리",
+        "단체 예약 가능",
+        "수요일 정기휴무"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "강릉칼제비 강릉본점",
+      "category": "칼국수",
+      "location": "chamsori",
+      "location_name": "참소리박물관",
+      "address": "강원 강릉시 창해로 451 28호 2층",
+      "phone": null,
+      "hours": {
+        "sunday": "10:30 - 22:00",
+        "daily": "10:30 - 22:00"
+      },
+      "break_time": null,
+      "closed_days": "연중무휴",
+      "tv_appearance": "오늘N",
+      "signature_menu": [
+        { "name": "칼제비", "description": "쫄깃한 수제 칼국수와 수제비" },
+        { "name": "감자전", "description": "바삭한 강원도 감자전" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능", "주차", "연중무휴", "브레이크타임없음"],
+      "naver_reviews": 7805,
+      "is_hotplace": true,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/강릉칼제비%20강릉본점",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "경포호 근처 인기 맛집",
+        "연중무휴, 브레이크타임 없음",
+        "TV 출연 맛집 (오늘N)",
+        "리뷰 7,800+ 핫플레이스"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "강릉초당콩감자탕",
+      "category": "감자탕",
+      "location": "chamsori",
+      "location_name": "참소리박물관",
+      "address": "강원 강릉시 초당순두부길 3 1층",
+      "phone": null,
+      "hours": {
+        "sunday": "10:30 - 20:30",
+        "daily": "10:30 - 20:30"
+      },
+      "break_time": "15:00 - 17:00",
+      "closed_days": "수요일",
+      "signature_menu": [
+        { "name": "초당콩감자탕", "description": "초당 순두부가 들어간 특별한 감자탕" },
+        { "name": "뼈다귀해장국", "description": "시원한 해장국" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능", "주차", "초당순두부마을"],
+      "naver_reviews": 9078,
+      "is_hotplace": true,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/강릉초당콩감자탕",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "초당순두부마을 내 위치",
+        "리뷰 9,000+ 대핫플레이스",
+        "단체 이용 가능",
+        "수요일 정기휴무"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "오봉이해물칼국수",
+      "category": "칼국수",
+      "location": "chamsori",
+      "location_name": "참소리박물관",
+      "address": "강원 강릉시 창해로 461 해안상가 A-1 2층",
+      "phone": null,
+      "hours": {
+        "sunday": "10:30 - 21:30",
+        "daily": "10:30 - 21:30"
+      },
+      "break_time": null,
+      "closed_days": "연중무휴 (추석 연휴도 정상영업)",
+      "signature_menu": [
+        { "name": "해물칼국수", "description": "신선한 해물이 푸짐하게 들어간 칼국수" },
+        { "name": "바지락칼국수", "description": "시원한 바지락 육수 칼국수" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능", "주차", "연중무휴", "바다전망", "넓은공간"],
+      "naver_reviews": 10351,
+      "is_hotplace": true,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/오봉이해물칼국수",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "강릉 최고 인기 칼국수집",
+        "리뷰 10,000+ 초대박 핫플",
+        "바다 전망의 넓은 공간",
+        "연중무휴 (추석에도 영업!)"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "토담순두부",
+      "category": "순두부",
+      "location": "chamsori",
+      "location_name": "참소리박물관",
+      "address": "강원 강릉시 난설헌로193번길 1-19",
+      "phone": null,
+      "hours": {
+        "sunday": "08:00 - 16:30",
+        "daily": "08:00 - 16:30"
+      },
+      "break_time": null,
+      "closed_days": "수요일",
+      "signature_menu": [
+        { "name": "순두부백반", "description": "부드러운 초당순두부 정식" },
+        { "name": "순두부찌개", "description": "뜨끈한 순두부찌개" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능", "주차", "아침식사가능"],
+      "naver_reviews": 2645,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/토담순두부",
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "아침 8시부터 영업 (아침 식사 가능!)",
+        "허균허난설헌기념관 주차장 근처",
+        "단체 이용 가능",
+        "수요일 정기휴무"
+      ]
+    }
+  ],
+  "locations": {
+    "ojukheon": {
+      "name": "오죽헌",
+      "description": "율곡 이이와 신사임당의 생가"
+    },
+    "chamsori": {
+      "name": "참소리박물관",
+      "description": "세계적인 축음기/오디오 박물관"
+    }
+  },
+  "last_updated": "2026-01-25",
+  "total_verified": 10
+}

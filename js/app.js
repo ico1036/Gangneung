@@ -59,7 +59,19 @@ function setupIntroPage() {
   // }
 
   enterBtn.addEventListener('click', () => {
-    // Smooth transition
+    showMainSite();
+  });
+
+  // Logo click to go back to intro
+  const logo = document.querySelector('.logo');
+  if (logo) {
+    logo.addEventListener('click', (e) => {
+      e.preventDefault();
+      showIntroPage();
+    });
+  }
+
+  function showMainSite() {
     introPage.style.opacity = '0';
     introPage.style.transform = 'translateY(-20px)';
     introPage.style.transition = 'all 0.5s ease';
@@ -76,12 +88,30 @@ function setupIntroPage() {
         mainSite.style.transform = 'translateY(0)';
       });
 
-      // Optional: remember visit
-      // localStorage.setItem('hasVisitedGangneung', 'true');
+      window.scrollTo(0, 0);
+    }, 500);
+  }
+
+  function showIntroPage() {
+    mainSite.style.opacity = '0';
+    mainSite.style.transform = 'translateY(20px)';
+    mainSite.style.transition = 'all 0.5s ease';
+
+    setTimeout(() => {
+      mainSite.classList.remove('visible');
+      introPage.classList.remove('hidden');
+      introPage.style.opacity = '0';
+      introPage.style.transform = 'translateY(-20px)';
+
+      requestAnimationFrame(() => {
+        introPage.style.transition = 'all 0.5s ease';
+        introPage.style.opacity = '1';
+        introPage.style.transform = 'translateY(0)';
+      });
 
       window.scrollTo(0, 0);
     }, 500);
-  });
+  }
 }
 
 // Load cafes data from JSON

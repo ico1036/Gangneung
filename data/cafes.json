@@ -630,8 +630,362 @@
         "바다가 보이는 분위기 좋은 인테리어",
         "네이버 평점 4.52로 높은 평가"
       ]
+    },
+    {
+      "id": 11,
+      "name": "에이엠브레드앤커피",
+      "category": "베이커리,카페",
+      "address": "강원 강릉시 창해로14번길 24",
+      "phone": "0507-1480-2200",
+      "image": null,
+      "local_image": null,
+      "hours": {
+        "daily": "~22:00"
+      },
+      "closed_days": null,
+      "view_type": [
+        "오션뷰",
+        "루프탑"
+      ],
+      "floors": "4층 (루프탑)",
+      "signature_menu": [
+        {
+          "name": "썬라이즈오렌지커피",
+          "price": null,
+          "description": "시그니처 음료"
+        },
+        {
+          "name": "아인슈페너",
+          "price": null
+        },
+        {
+          "name": "말차슈페너",
+          "price": null
+        }
+      ],
+      "price_range": "₩₩",
+      "features": [
+        "오션뷰",
+        "루프탑",
+        "4층",
+        "베이커리",
+        "주차",
+        "휠체어출입가능"
+      ],
+      "naver_reviews": 8887,
+      "visitor_reviews": 5941,
+      "blog_reviews": 2946,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/에이엠브레드앤커피",
+      "instagram": "ambreadcoffee",
+      "tv_appearance": null,
+      "parking": "주차 가능",
+      "group_friendly": true,
+      "pet_friendly": false,
+      "wheelchair_accessible": true,
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "안목해변 인기 베이커리 카페",
+        "4층 루프탑에서 오션뷰 감상",
+        "썬라이즈오렌지커피 시그니처",
+        "휠체어 이용 가능"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "정남미명과 강릉본점",
+      "category": "카페,디저트",
+      "address": "강원 강릉시 경강로 2668 1층",
+      "phone": "0507-1391-0130",
+      "image": null,
+      "local_image": null,
+      "hours": {
+        "daily": "~19:00"
+      },
+      "closed_days": null,
+      "view_type": null,
+      "floors": "1층",
+      "signature_menu": [
+        {
+          "name": "감자빵",
+          "price": null,
+          "description": "구황작물 빵 시리즈"
+        },
+        {
+          "name": "고구마빵",
+          "price": null
+        },
+        {
+          "name": "대파빵",
+          "price": null
+        },
+        {
+          "name": "단감 고추빵",
+          "price": null
+        }
+      ],
+      "price_range": "₩₩",
+      "features": [
+        "구황작물빵",
+        "예약",
+        "포장",
+        "간편결제",
+        "주차"
+      ],
+      "naver_reviews": 3762,
+      "visitor_reviews": 3303,
+      "blog_reviews": 459,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/정남미명과%20강릉본점",
+      "instagram": null,
+      "website": "https://jungnammi.com",
+      "tv_appearance": null,
+      "parking": "주차 가능",
+      "group_friendly": false,
+      "pet_friendly": false,
+      "wheelchair_accessible": false,
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "강릉 인기 베이커리, 구황작물빵 전문",
+        "안목해변 주차장쪽 삼척꽈배기 옆집",
+        "감자빵, 고구마빵, 대파빵 등 다양한 구황작물빵",
+        "일찍 품절될 수 있어 오픈런 추천"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "월량화",
+      "category": "카페,디저트",
+      "address": "강원 강릉시 공항길29번길 4",
+      "phone": "0507-1314-2156",
+      "image": null,
+      "local_image": null,
+      "hours": {
+        "daily": "~19:30"
+      },
+      "closed_days": null,
+      "view_type": null,
+      "floors": null,
+      "signature_menu": [
+        {
+          "name": "감자빵",
+          "price": null,
+          "description": "포실포실 감자빵"
+        }
+      ],
+      "price_range": "₩₩",
+      "features": [
+        "예약",
+        "포장",
+        "무선인터넷",
+        "반려동물동반",
+        "단체이용가능",
+        "유아의자",
+        "간편결제",
+        "주차",
+        "휠체어출입가능"
+      ],
+      "naver_reviews": 752,
+      "visitor_reviews": 496,
+      "blog_reviews": 256,
+      "naver_rating": 4.62,
+      "naver_link": "https://map.naver.com/p/search/월량화%20안목",
+      "instagram": "cafe_w.r.hwa",
+      "tv_appearance": null,
+      "parking": "건물 전용 주차장",
+      "group_friendly": true,
+      "pet_friendly": true,
+      "wheelchair_accessible": true,
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "포실포실 감자빵의 독특한 매력",
+        "네이버 평점 4.62 높은 평가",
+        "반려동물 동반 가능",
+        "휠체어 출입 가능"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "카페베네 안목점",
+      "category": "카페",
+      "address": "강원 강릉시 창해로14번길 50 1~3층",
+      "phone": "033-651-1100",
+      "image": null,
+      "local_image": null,
+      "hours": {
+        "daily": "~01:00 (익일)",
+        "last_order": "00:50"
+      },
+      "closed_days": null,
+      "view_type": [
+        "오션뷰"
+      ],
+      "floors": "1~3층",
+      "signature_menu": [
+        {
+          "name": "아메리카노",
+          "price": null
+        },
+        {
+          "name": "카페라떼",
+          "price": null
+        }
+      ],
+      "price_range": "₩₩",
+      "features": [
+        "오션뷰",
+        "단체이용가능",
+        "포장",
+        "무선인터넷",
+        "남녀화장실구분",
+        "예약",
+        "유아의자",
+        "간편결제",
+        "주차",
+        "휠체어출입가능"
+      ],
+      "naver_reviews": 1678,
+      "visitor_reviews": 1568,
+      "blog_reviews": 110,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/카페베네%20안목점",
+      "instagram": "caffebene_anmok",
+      "tv_appearance": null,
+      "parking": "주차 가능",
+      "group_friendly": true,
+      "pet_friendly": false,
+      "wheelchair_accessible": true,
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "안목해변 야간 영업 카페 (익일 01:00까지)",
+        "3층 규모의 대형 카페",
+        "휠체어 출입 가능"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "로지커피",
+      "category": "카페,디저트",
+      "address": "강원 강릉시 창해로14번길 52",
+      "phone": "0507-1359-5681",
+      "image": null,
+      "local_image": null,
+      "hours": {
+        "note": "토요일 휴무 있음"
+      },
+      "closed_days": "토요일 (변동 가능)",
+      "view_type": [
+        "오션뷰",
+        "루프탑"
+      ],
+      "floors": "4층 (루프탑)",
+      "signature_menu": [
+        {
+          "name": "상하목장 아이스크림",
+          "price": null,
+          "description": "유기농 아이스크림"
+        },
+        {
+          "name": "아이스크림라떼",
+          "price": null
+        },
+        {
+          "name": "초코아이스크림라떼",
+          "price": null
+        },
+        {
+          "name": "아메리카노",
+          "price": null
+        }
+      ],
+      "price_range": "₩₩",
+      "features": [
+        "오션뷰",
+        "루프탑",
+        "통창뷰",
+        "단체이용가능",
+        "예약",
+        "무선인터넷",
+        "포장",
+        "남녀화장실구분",
+        "간편결제",
+        "주차",
+        "휠체어출입가능"
+      ],
+      "naver_reviews": 4921,
+      "visitor_reviews": 3995,
+      "blog_reviews": 926,
+      "naver_rating": 4.36,
+      "naver_link": "https://map.naver.com/p/search/로지커피%20안목",
+      "instagram": null,
+      "website": "https://smartstore.naver.com/rosyfactory",
+      "tv_appearance": null,
+      "parking": "강릉항 공영주차장 이용",
+      "group_friendly": true,
+      "pet_friendly": false,
+      "wheelchair_accessible": true,
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "4층 대형 카페, 루프탑 보유",
+        "통창으로 안목 바다뷰와 남대천 뷰 감상",
+        "상하목장 유기농 아이스크림 인기",
+        "강릉항 맞은편 위치"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "퀸마리나 커피",
+      "category": "카페,디저트",
+      "address": "강원 강릉시 창해로14번길 51-20 4층",
+      "phone": "033-652-2543",
+      "image": null,
+      "local_image": null,
+      "hours": {
+        "last_order": "21:40"
+      },
+      "closed_days": null,
+      "view_type": [
+        "오션뷰"
+      ],
+      "floors": "4층",
+      "signature_menu": [
+        {
+          "name": "흑임자크림커피",
+          "price": null,
+          "description": "시그니처 메뉴, 두 번 음미 후 빨대로 마시면 더 맛있음"
+        },
+        {
+          "name": "콜드브루",
+          "price": null
+        }
+      ],
+      "price_range": "₩₩",
+      "features": [
+        "오션뷰",
+        "3면통창",
+        "단체석",
+        "주차"
+      ],
+      "naver_reviews": 287,
+      "visitor_reviews": 241,
+      "blog_reviews": 46,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/퀸마리나%20커피%20안목",
+      "instagram": null,
+      "tv_appearance": null,
+      "parking": "주차 가능",
+      "group_friendly": true,
+      "pet_friendly": false,
+      "wheelchair_accessible": false,
+      "verified_date": "2026-01-25",
+      "highlights": [
+        "3면 통창으로 에메랄드빛 바다 조망",
+        "흑임자크림커피 시그니처 메뉴",
+        "강릉항 요트 마리나가 보이는 5층 건물 4층",
+        "넓은 창가 좌석과 단체석"
+      ]
     }
   ],
   "last_updated": "2026-01-25",
-  "total_verified": 10
+  "total_verified": 16
 }

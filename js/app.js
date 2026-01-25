@@ -264,6 +264,134 @@ function getEmbeddedCafesData() {
         "사이폰 커피를 맛볼 수 있는 카페",
         "네이버 평점 4.52로 높은 평가"
       ]
+    },
+    {
+      id: 11,
+      name: "에이엠브레드앤커피",
+      category: "베이커리,카페",
+      address: "강원 강릉시 창해로14번길 24",
+      phone: "0507-1480-2200",
+      view_type: ["오션뷰", "루프탑"],
+      signature_menu: [
+        { name: "썬라이즈오렌지커피" },
+        { name: "아인슈페너" },
+        { name: "말차슈페너" }
+      ],
+      price_range: "₩₩",
+      features: ["오션뷰", "루프탑", "4층", "베이커리", "주차", "휠체어출입가능"],
+      naver_reviews: 8887,
+      naver_rating: null,
+      naver_link: "https://map.naver.com/p/search/에이엠브레드앤커피",
+      highlights: [
+        "안목해변 인기 베이커리 카페",
+        "4층 루프탑에서 오션뷰 감상"
+      ]
+    },
+    {
+      id: 12,
+      name: "정남미명과 강릉본점",
+      category: "카페,디저트",
+      address: "강원 강릉시 경강로 2668 1층",
+      phone: "0507-1391-0130",
+      view_type: null,
+      signature_menu: [
+        { name: "감자빵" },
+        { name: "고구마빵" },
+        { name: "대파빵" }
+      ],
+      price_range: "₩₩",
+      features: ["구황작물빵", "예약", "포장", "주차"],
+      naver_reviews: 3762,
+      naver_rating: null,
+      naver_link: "https://map.naver.com/p/search/정남미명과%20강릉본점",
+      highlights: [
+        "강릉 인기 베이커리, 구황작물빵 전문",
+        "일찍 품절될 수 있어 오픈런 추천"
+      ]
+    },
+    {
+      id: 13,
+      name: "월량화",
+      category: "카페,디저트",
+      address: "강원 강릉시 공항길29번길 4",
+      phone: "0507-1314-2156",
+      view_type: null,
+      signature_menu: [
+        { name: "감자빵" }
+      ],
+      price_range: "₩₩",
+      features: ["예약", "포장", "반려동물동반", "단체이용가능", "주차", "휠체어출입가능"],
+      naver_reviews: 752,
+      naver_rating: 4.62,
+      naver_link: "https://map.naver.com/p/search/월량화%20안목",
+      pet_friendly: true,
+      highlights: [
+        "포실포실 감자빵의 독특한 매력",
+        "반려동물 동반 가능"
+      ]
+    },
+    {
+      id: 14,
+      name: "카페베네 안목점",
+      category: "카페",
+      address: "강원 강릉시 창해로14번길 50 1~3층",
+      phone: "033-651-1100",
+      view_type: ["오션뷰"],
+      signature_menu: [
+        { name: "아메리카노" },
+        { name: "카페라떼" }
+      ],
+      price_range: "₩₩",
+      features: ["오션뷰", "단체이용가능", "야간영업", "주차", "휠체어출입가능"],
+      naver_reviews: 1678,
+      naver_rating: null,
+      naver_link: "https://map.naver.com/p/search/카페베네%20안목점",
+      highlights: [
+        "안목해변 야간 영업 카페 (익일 01:00까지)",
+        "3층 규모의 대형 카페"
+      ]
+    },
+    {
+      id: 15,
+      name: "로지커피",
+      category: "카페,디저트",
+      address: "강원 강릉시 창해로14번길 52",
+      phone: "0507-1359-5681",
+      view_type: ["오션뷰", "루프탑"],
+      signature_menu: [
+        { name: "상하목장 아이스크림" },
+        { name: "아이스크림라떼" }
+      ],
+      price_range: "₩₩",
+      features: ["오션뷰", "루프탑", "통창뷰", "단체이용가능", "주차", "휠체어출입가능"],
+      naver_reviews: 4921,
+      naver_rating: 4.36,
+      naver_link: "https://map.naver.com/p/search/로지커피%20안목",
+      highlights: [
+        "4층 대형 카페, 루프탑 보유",
+        "상하목장 유기농 아이스크림 인기"
+      ]
+    },
+    {
+      id: 16,
+      name: "퀸마리나 커피",
+      category: "카페,디저트",
+      address: "강원 강릉시 창해로14번길 51-20 4층",
+      phone: "033-652-2543",
+      view_type: ["오션뷰"],
+      signature_menu: [
+        { name: "흑임자크림커피" },
+        { name: "콜드브루" }
+      ],
+      price_range: "₩₩",
+      features: ["오션뷰", "3면통창", "단체석", "주차"],
+      naver_reviews: 287,
+      naver_rating: null,
+      naver_link: "https://map.naver.com/p/search/퀸마리나%20커피%20안목",
+      highlights: [
+        "3면 통창으로 에메랄드빛 바다 조망",
+        "흑임자크림커피 시그니처 메뉴"
+      ]
     }
   ];
 }

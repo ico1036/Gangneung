@@ -449,7 +449,7 @@ img {
   color: var(--text-light);
 }
 
-.cafe-tag.ocean { background: #DBEAFE; color: #1E40AF; }
+.cafe-tag.group { background: #EDE9FE; color: #5B21B6; }
 .cafe-tag.rooftop { background: #FEF3C7; color: #92400E; }
 .cafe-tag.pet { background: #D1FAE5; color: #065F46; }
 .cafe-tag.dessert { background: #FCE7F3; color: #9D174D; }

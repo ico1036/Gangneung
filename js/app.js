@@ -442,8 +442,8 @@ function filterCafes(cafes) {
     const category = cafe.category || '';
 
     switch (currentFilter) {
-      case 'ocean':
-        return viewTypes.includes('오션뷰') || features.includes('오션뷰');
+      case 'group':
+        return features.includes('단체이용가능') || features.includes('단체석') || cafe.group_friendly;
       case 'rooftop':
         return viewTypes.includes('루프탑') || features.includes('루프탑');
       case 'dessert':
@@ -547,8 +547,8 @@ function createImageTags(cafe) {
   const viewTypes = cafe.view_type || [];
   const features = cafe.features || [];
 
-  if (viewTypes.includes('오션뷰') || features.includes('오션뷰')) {
-    tags.push('<span class="cafe-tag ocean">오션뷰</span>');
+  if (features.includes('단체이용가능') || features.includes('단체석') || cafe.group_friendly) {
+    tags.push('<span class="cafe-tag group">단체</span>');
   }
   if (viewTypes.includes('루프탑') || features.includes('루프탑')) {
     tags.push('<span class="cafe-tag rooftop">루프탑</span>');
@@ -571,8 +571,8 @@ function createTags(cafe) {
   const viewTypes = cafe.view_type || [];
   const features = cafe.features || [];
 
-  if (viewTypes.includes('오션뷰') || features.includes('오션뷰')) {
-    tags.push('<span class="cafe-tag ocean">오션뷰</span>');
+  if (features.includes('단체이용가능') || features.includes('단체석') || cafe.group_friendly) {
+    tags.push('<span class="cafe-tag group">단체 가능</span>');
   }
   if (viewTypes.includes('루프탑') || features.includes('루프탑')) {
     tags.push('<span class="cafe-tag rooftop">루프탑</span>');

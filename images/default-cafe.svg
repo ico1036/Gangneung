@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <rect x="100" y="80" width="140" height="120" rx="8" fill="#e9ecef"/>
+  <rect x="240" y="100" width="40" height="60" rx="20" fill="none" stroke="#e9ecef" stroke-width="8"/>
+  <rect x="120" y="200" width="100" height="16" rx="4" fill="#dee2e6"/>
+  <ellipse cx="170" cy="80" rx="60" ry="12" fill="#dee2e6"/>
+  <path d="M130 120 Q170 140 210 120" stroke="#dee2e6" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M140 100 Q150 85 160 100" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M170 95 Q180 80 190 95" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <text x="200" y="260" text-anchor="middle" font-family="system-ui" font-size="14" fill="#adb5bd">카페 이미지</text>
+</svg>

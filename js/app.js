@@ -311,27 +311,6 @@ function getEmbeddedCafesData() {
     },
     {
       id: 13,
-      name: "월량화",
-      category: "카페,디저트",
-      address: "강원 강릉시 공항길29번길 4",
-      phone: "0507-1314-2156",
-      view_type: null,
-      signature_menu: [
-        { name: "감자빵" }
-      ],
-      price_range: "₩₩",
-      features: ["예약", "포장", "반려동물동반", "단체이용가능", "주차", "휠체어출입가능"],
-      naver_reviews: 752,
-      naver_rating: 4.62,
-      naver_link: "https://map.naver.com/p/search/월량화%20안목",
-      pet_friendly: true,
-      highlights: [
-        "포실포실 감자빵의 독특한 매력",
-        "반려동물 동반 가능"
-      ]
-    },
-    {
-      id: 14,
       name: "카페베네 안목점",
       category: "카페",
       address: "강원 강릉시 창해로14번길 50 1~3층",
@@ -352,7 +331,7 @@ function getEmbeddedCafesData() {
       ]
     },
     {
-      id: 15,
+      id: 14,
       name: "로지커피",
       category: "카페,디저트",
       address: "강원 강릉시 창해로14번길 52",
@@ -373,7 +352,7 @@ function getEmbeddedCafesData() {
       ]
     },
     {
-      id: 16,
+      id: 15,
       name: "퀸마리나 커피",
       category: "카페,디저트",
       address: "강원 강릉시 창해로14번길 51-20 4층",

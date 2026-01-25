@@ -754,58 +754,6 @@
     },
     {
       "id": 13,
-      "name": "월량화",
-      "category": "카페,디저트",
-      "address": "강원 강릉시 공항길29번길 4",
-      "phone": "0507-1314-2156",
-      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200326_150%2F1585228320272RkeQ0_JPEG%2FnCqAHZtMzHUDf24rbmuAKCxd.jpeg.jpg",
-      "local_image": null,
-      "hours": {
-        "daily": "~19:30"
-      },
-      "closed_days": null,
-      "view_type": null,
-      "floors": null,
-      "signature_menu": [
-        {
-          "name": "감자빵",
-          "price": null,
-          "description": "포실포실 감자빵"
-        }
-      ],
-      "price_range": "₩₩",
-      "features": [
-        "예약",
-        "포장",
-        "무선인터넷",
-        "반려동물동반",
-        "단체이용가능",
-        "유아의자",
-        "간편결제",
-        "주차",
-        "휠체어출입가능"
-      ],
-      "naver_reviews": 752,
-      "visitor_reviews": 496,
-      "blog_reviews": 256,
-      "naver_rating": 4.62,
-      "naver_link": "https://map.naver.com/p/search/월량화%20안목",
-      "instagram": "cafe_w.r.hwa",
-      "tv_appearance": null,
-      "parking": "건물 전용 주차장",
-      "group_friendly": true,
-      "pet_friendly": true,
-      "wheelchair_accessible": true,
-      "verified_date": "2026-01-25",
-      "highlights": [
-        "포실포실 감자빵의 독특한 매력",
-        "네이버 평점 4.62 높은 평가",
-        "반려동물 동반 가능",
-        "휠체어 출입 가능"
-      ]
-    },
-    {
-      "id": 14,
       "name": "카페베네 안목점",
       "category": "카페",
       "address": "강원 강릉시 창해로14번길 50 1~3층",
@@ -863,7 +811,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "로지커피",
       "category": "카페,디저트",
       "address": "강원 강릉시 창해로14번길 52",
@@ -933,7 +881,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 15,
       "name": "퀸마리나 커피",
       "category": "카페,디저트",
       "address": "강원 강릉시 창해로14번길 51-20 4층",
@@ -987,5 +935,5 @@
     }
   ],
   "last_updated": "2026-01-25",
-  "total_verified": 16
+  "total_verified": 15
 }

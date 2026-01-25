@@ -6,21 +6,56 @@
       "category": "카페,디저트",
       "address": "강원 강릉시 창해로14번길 22",
       "phone": "033-653-3130",
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240815_241%2F1723686824825Q5n13_JPEG%2FKakaoTalk_20240815_105316465.jpg",
+      "local_image": "images/cafes/mirmar.jpg",
       "hours": {
         "daily": "09:30 - 21:30"
       },
       "closed_days": null,
-      "view_type": ["오션뷰", "루프탑"],
+      "view_type": [
+        "오션뷰",
+        "루프탑"
+      ],
       "floors": "1층~4층 (4층 루프탑)",
       "signature_menu": [
-        {"name": "황치즈 돌체슈페너", "price": 6900, "description": "꾸덕한 황치즈 크림과 연유가 만난 단짠 아인슈페너 커피"},
-        {"name": "막걸리크림 라떼", "price": 6900, "description": "무알코올 막걸리향 크림이 듬뿍 올라간 이색적인 맛의 크림라떼"},
-        {"name": "구름 속에 딸기", "price": 6900, "description": "수제 크림과 에스프레소 그리고 그 속에 달콤한 딸기청의 조화"},
-        {"name": "쇼콜라 누아르", "price": 6900, "description": "달콤쌉싸름한 다크초콜릿과 수제 크림의 만남"},
-        {"name": "수제 냥들렌", "price": 4000, "description": "흑임자 마들렌 (고양이 모양)"}
+        {
+          "name": "황치즈 돌체슈페너",
+          "price": 6900,
+          "description": "꾸덕한 황치즈 크림과 연유가 만난 단짠 아인슈페너 커피"
+        },
+        {
+          "name": "막걸리크림 라떼",
+          "price": 6900,
+          "description": "무알코올 막걸리향 크림이 듬뿍 올라간 이색적인 맛의 크림라떼"
+        },
+        {
+          "name": "구름 속에 딸기",
+          "price": 6900,
+          "description": "수제 크림과 에스프레소 그리고 그 속에 달콤한 딸기청의 조화"
+        },
+        {
+          "name": "쇼콜라 누아르",
+          "price": 6900,
+          "description": "달콤쌉싸름한 다크초콜릿과 수제 크림의 만남"
+        },
+        {
+          "name": "수제 냥들렌",
+          "price": 4000,
+          "description": "흑임자 마들렌 (고양이 모양)"
+        }
       ],
       "price_range": "₩₩",
-      "features": ["오션뷰", "루프탑", "4층 건물", "포토존", "주차", "무선인터넷", "예약가능", "단체이용가능", "간편결제"],
+      "features": [
+        "오션뷰",
+        "루프탑",
+        "4층 건물",
+        "포토존",
+        "주차",
+        "무선인터넷",
+        "예약가능",
+        "단체이용가능",
+        "간편결제"
+      ],
       "naver_reviews": 4001,
       "visitor_reviews": 2677,
       "blog_reviews": 1323,
@@ -47,6 +82,8 @@
       "category": "카페,디저트",
       "address": "강원 강릉시 창해로14번길 28",
       "phone": "033-653-0038",
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250527_251%2F17483060162353SqYe_JPEG%2FKakaoTalk_20250527_091315788_04.jpg",
+      "local_image": "images/cafes/bossanova.jpg",
       "hours": {
         "weekdays": "07:30 - 22:00",
         "saturday": "07:00 - 22:00",
@@ -54,17 +91,50 @@
         "last_order": "21:30"
       },
       "closed_days": null,
-      "view_type": ["오션뷰"],
+      "view_type": [
+        "오션뷰"
+      ],
       "floors": null,
       "signature_menu": [
-        {"name": "핸드드립 커피", "price": 6500, "price_max": 7300, "description": "다양한 산지의 원두를 바리스타가 직접 내려드리는 핸드드립 커피"},
-        {"name": "아메리카노", "price": 5500, "description": "보사노바 대표 블렌드인 안목블렌드로 추출한, 고소하고 단맛이 강한 아메리카노"},
-        {"name": "카페라떼", "price": 5800, "description": "보사노바 문래블렌드를 사용하여 담백하고 맛있는 원두로 만든 카페라떼"},
-        {"name": "피넛버터라떼", "price": 6500, "description": "피넛버터와 커피의 조화"},
-        {"name": "보사노바 베이커리", "price": 3000, "price_max": 10000, "description": "좋은 재료를 엄선하여 당일생산, 당일판매를 지키고 있는 맛있는 보사노바만의 베이커리"}
+        {
+          "name": "핸드드립 커피",
+          "price": 6500,
+          "price_max": 7300,
+          "description": "다양한 산지의 원두를 바리스타가 직접 내려드리는 핸드드립 커피"
+        },
+        {
+          "name": "아메리카노",
+          "price": 5500,
+          "description": "보사노바 대표 블렌드인 안목블렌드로 추출한, 고소하고 단맛이 강한 아메리카노"
+        },
+        {
+          "name": "카페라떼",
+          "price": 5800,
+          "description": "보사노바 문래블렌드를 사용하여 담백하고 맛있는 원두로 만든 카페라떼"
+        },
+        {
+          "name": "피넛버터라떼",
+          "price": 6500,
+          "description": "피넛버터와 커피의 조화"
+        },
+        {
+          "name": "보사노바 베이커리",
+          "price": 3000,
+          "price_max": 10000,
+          "description": "좋은 재료를 엄선하여 당일생산, 당일판매를 지키고 있는 맛있는 보사노바만의 베이커리"
+        }
       ],
       "price_range": "₩₩",
-      "features": ["오션뷰", "자체로스팅", "베이커리", "주차", "무선인터넷", "반려동물동반", "포장", "단체이용가능"],
+      "features": [
+        "오션뷰",
+        "자체로스팅",
+        "베이커리",
+        "주차",
+        "무선인터넷",
+        "반려동물동반",
+        "포장",
+        "단체이용가능"
+      ],
       "naver_reviews": 9146,
       "visitor_reviews": 6721,
       "blog_reviews": 2426,
@@ -92,21 +162,39 @@
       "category": "카페",
       "address": "강원 강릉시 창해로14번길 40 (견소동)",
       "phone": "1522-3232",
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190828_93%2F1566953601239OT9MQ_PNG%2FxX7Wv642gXMoTI0DAv0hRymS.png",
+      "local_image": "images/cafes/starbucks.jpg",
       "hours": {
         "weekdays": "08:00 - 22:00",
         "saturday": "07:00 - 22:00",
         "sunday": "07:00 - 22:00"
       },
       "closed_days": null,
-      "view_type": ["오션뷰"],
+      "view_type": [
+        "오션뷰"
+      ],
       "floors": null,
       "signature_menu": [
-        {"name": "아메리카노", "price": 4500},
-        {"name": "카페라떼", "price": 5000},
-        {"name": "바다를 바라보며 마시는 커피", "price": null}
+        {
+          "name": "아메리카노",
+          "price": 4500
+        },
+        {
+          "name": "카페라떼",
+          "price": 5000
+        },
+        {
+          "name": "바다를 바라보며 마시는 커피",
+          "price": null
+        }
       ],
       "price_range": "₩₩",
-      "features": ["오션뷰", "네이버주문", "무선인터넷", "간편결제"],
+      "features": [
+        "오션뷰",
+        "네이버주문",
+        "무선인터넷",
+        "간편결제"
+      ],
       "naver_reviews": 8240,
       "visitor_reviews": 7511,
       "blog_reviews": 729,
@@ -134,23 +222,57 @@
       "category": "카페,디저트",
       "address": "강원 강릉시 창해로14번길 18",
       "phone": "0507-1447-0225",
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170915_112%2F1505450134984QVniy_JPEG%2F1Ym5JtNsvVjQfixC4qxFrj_-.jpg",
+      "local_image": "images/cafes/lumiere.jpg",
       "hours": {
         "weekdays": "08:30 - 23:00",
         "sunday": "08:30 - 22:00"
       },
       "closed_days": null,
-      "view_type": ["오션뷰"],
+      "view_type": [
+        "오션뷰"
+      ],
       "floors": "3층 건물 (2,3층 추천)",
       "signature_menu": [
-        {"name": "딸기라떼", "price": 7500, "description": "신선한 딸기가 가득한 인기 음료"},
-        {"name": "아몬드크림라떼", "price": 6300, "description": "고소한 아몬드 크림 라떼"},
-        {"name": "안목바다에이드", "price": 6800, "description": "안목해변을 담은 시그니처 에이드"},
-        {"name": "아메리카노", "price": 5500},
-        {"name": "카페라떼", "price": 5800},
-        {"name": "토마토 모짜렐라 파니니", "price": 12000}
+        {
+          "name": "딸기라떼",
+          "price": 7500,
+          "description": "신선한 딸기가 가득한 인기 음료"
+        },
+        {
+          "name": "아몬드크림라떼",
+          "price": 6300,
+          "description": "고소한 아몬드 크림 라떼"
+        },
+        {
+          "name": "안목바다에이드",
+          "price": 6800,
+          "description": "안목해변을 담은 시그니처 에이드"
+        },
+        {
+          "name": "아메리카노",
+          "price": 5500
+        },
+        {
+          "name": "카페라떼",
+          "price": 5800
+        },
+        {
+          "name": "토마토 모짜렐라 파니니",
+          "price": 12000
+        }
       ],
       "price_range": "₩₩",
-      "features": ["오션뷰", "통창", "3층 건물", "브런치", "주차", "무선인터넷", "단체이용가능", "포장"],
+      "features": [
+        "오션뷰",
+        "통창",
+        "3층 건물",
+        "브런치",
+        "주차",
+        "무선인터넷",
+        "단체이용가능",
+        "포장"
+      ],
       "naver_reviews": 5469,
       "visitor_reviews": 4039,
       "blog_reviews": 1431,
@@ -178,6 +300,8 @@
       "category": "아이스크림",
       "address": "강원 강릉시 경강로 2642 1~4층",
       "phone": "0507-1483-5537",
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230118_220%2F1674028858455ObAdI_JPEG%2F%25BB%25E7%25BF%25EB%25BF%25CF%25B7%25E1_%25282%2529.JPG",
+      "local_image": "images/cafes/sundubu-gelato.jpg",
       "hours": {
         "daily": "09:30 - 21:00"
       },
@@ -185,15 +309,40 @@
       "view_type": null,
       "floors": "1층~4층",
       "signature_menu": [
-        {"name": "순두부젤라또", "price": 5000, "description": "직접 개발한 원조 강릉 시그니처 순두부젤라또 - 초당순두부와 이탈리아 정통 젤라또의 만남"},
-        {"name": "흑임자젤라또", "price": 5000},
-        {"name": "인절미젤라또", "price": 5000},
-        {"name": "피스타치오젤라또", "price": 5000},
-        {"name": "강릉커피젤라또", "price": 5000},
-        {"name": "에스프레소젤라또커피(순두부)", "price": 8000}
+        {
+          "name": "순두부젤라또",
+          "price": 5000,
+          "description": "직접 개발한 원조 강릉 시그니처 순두부젤라또 - 초당순두부와 이탈리아 정통 젤라또의 만남"
+        },
+        {
+          "name": "흑임자젤라또",
+          "price": 5000
+        },
+        {
+          "name": "인절미젤라또",
+          "price": 5000
+        },
+        {
+          "name": "피스타치오젤라또",
+          "price": 5000
+        },
+        {
+          "name": "강릉커피젤라또",
+          "price": 5000
+        },
+        {
+          "name": "에스프레소젤라또커피(순두부)",
+          "price": 8000
+        }
       ],
       "price_range": "₩",
-      "features": ["단체이용가능", "포장", "무선인터넷", "주차", "야외테라스"],
+      "features": [
+        "단체이용가능",
+        "포장",
+        "무선인터넷",
+        "주차",
+        "야외테라스"
+      ],
       "naver_reviews": 9220,
       "visitor_reviews": 5741,
       "blog_reviews": 3477,
@@ -221,18 +370,40 @@
       "category": "카페,디저트",
       "address": "강원 강릉시 견소동",
       "phone": null,
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250505_298%2F1746400537860YWfF5_PNG%2F55.png",
+      "local_image": "images/cafes/kikrus.jpg",
       "hours": null,
       "closed_days": null,
-      "view_type": ["오션뷰"],
+      "view_type": [
+        "오션뷰"
+      ],
       "floors": null,
       "signature_menu": [
-        {"name": "키크러스 커피", "price": null, "description": "시그니처 커피"},
-        {"name": "자몽타르트", "price": null},
-        {"name": "연탄빵", "price": null},
-        {"name": "이쉘빵", "price": null, "description": "고구마 맛탕맛"}
+        {
+          "name": "키크러스 커피",
+          "price": null,
+          "description": "시그니처 커피"
+        },
+        {
+          "name": "자몽타르트",
+          "price": null
+        },
+        {
+          "name": "연탄빵",
+          "price": null
+        },
+        {
+          "name": "이쉘빵",
+          "price": null,
+          "description": "고구마 맛탕맛"
+        }
       ],
       "price_range": "₩₩",
-      "features": ["오션뷰", "베이커리", "데이트"],
+      "features": [
+        "오션뷰",
+        "베이커리",
+        "데이트"
+      ],
       "naver_reviews": 6708,
       "visitor_reviews": null,
       "blog_reviews": null,
@@ -258,18 +429,41 @@
       "category": "카페",
       "address": "강원 강릉시 견소동",
       "phone": null,
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20251126_200%2F1764090316059RUI4q_JPEG%2F%25C4%25E1%25C5%25A9%25B8%25B2%25B6%25F3%25B6%25BC_2.jpg",
+      "local_image": "images/cafes/coffee-america.jpg",
       "hours": null,
       "closed_days": null,
-      "view_type": ["오션뷰", "통창"],
+      "view_type": [
+        "오션뷰",
+        "통창"
+      ],
       "floors": null,
       "signature_menu": [
-        {"name": "진저라떼", "price": null},
-        {"name": "콩크림라떼", "price": null},
-        {"name": "크로플", "price": null},
-        {"name": "강아지 머핀", "price": null, "description": "반려견용 디저트"}
+        {
+          "name": "진저라떼",
+          "price": null
+        },
+        {
+          "name": "콩크림라떼",
+          "price": null
+        },
+        {
+          "name": "크로플",
+          "price": null
+        },
+        {
+          "name": "강아지 머핀",
+          "price": null,
+          "description": "반려견용 디저트"
+        }
       ],
       "price_range": "₩₩",
-      "features": ["오션뷰", "통창뷰", "반려동물동반", "크로플"],
+      "features": [
+        "오션뷰",
+        "통창뷰",
+        "반려동물동반",
+        "크로플"
+      ],
       "naver_reviews": 3936,
       "visitor_reviews": null,
       "blog_reviews": null,
@@ -295,15 +489,26 @@
       "category": "카페",
       "address": "강원 강릉시 견소동",
       "phone": null,
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241104_69%2F1730694136902J8XSJ_JPEG%2FKakaoTalk_20241104_132132413.jpg",
+      "local_image": "images/cafes/coffee-cupper.jpg",
       "hours": null,
       "closed_days": null,
-      "view_type": ["오션뷰"],
+      "view_type": [
+        "오션뷰"
+      ],
       "floors": null,
       "signature_menu": [
-        {"name": "특별한 커피", "price": null, "description": "독특한 커피 추출 방식"}
+        {
+          "name": "특별한 커피",
+          "price": null,
+          "description": "독특한 커피 추출 방식"
+        }
       ],
       "price_range": "₩₩",
-      "features": ["오션뷰", "특별한 커피 추출"],
+      "features": [
+        "오션뷰",
+        "특별한 커피 추출"
+      ],
       "naver_reviews": 1709,
       "visitor_reviews": null,
       "blog_reviews": null,
@@ -328,17 +533,36 @@
       "category": "카페",
       "address": "강원 강릉시 견소동",
       "phone": null,
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200506_128%2F1588741565525Agm2e_JPEG%2Ff_v2qy34SCT89Nunhrr0yDOq.jpg",
+      "local_image": "images/cafes/coffee-cl.jpg",
       "hours": null,
       "closed_days": null,
-      "view_type": ["오션뷰", "테라스"],
+      "view_type": [
+        "오션뷰",
+        "테라스"
+      ],
       "floors": "2층",
       "signature_menu": [
-        {"name": "쑥라떼", "price": null, "description": "인기 메뉴"},
-        {"name": "망고 스무디", "price": null},
-        {"name": "젤라또", "price": null}
+        {
+          "name": "쑥라떼",
+          "price": null,
+          "description": "인기 메뉴"
+        },
+        {
+          "name": "망고 스무디",
+          "price": null
+        },
+        {
+          "name": "젤라또",
+          "price": null
+        }
       ],
       "price_range": "₩₩",
-      "features": ["오션뷰", "테라스뷰", "젤라또"],
+      "features": [
+        "오션뷰",
+        "테라스뷰",
+        "젤라또"
+      ],
       "naver_reviews": 2911,
       "visitor_reviews": null,
       "blog_reviews": null,
@@ -363,16 +587,32 @@
       "category": "카페,디저트",
       "address": "강원 강릉시 견소동",
       "phone": null,
+      "image": "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20251024_1%2F1761279833132cPIfS_JPEG%2FKakaoTalk_20251019_220652232.jpg",
+      "local_image": "images/cafes/haslla-gabae.jpg",
       "hours": null,
       "closed_days": null,
-      "view_type": ["오션뷰"],
+      "view_type": [
+        "오션뷰"
+      ],
       "floors": null,
       "signature_menu": [
-        {"name": "사이폰 커피", "price": null, "description": "사이폰 방식으로 추출하는 커피"},
-        {"name": "두쫀쿠", "price": null}
+        {
+          "name": "사이폰 커피",
+          "price": null,
+          "description": "사이폰 방식으로 추출하는 커피"
+        },
+        {
+          "name": "두쫀쿠",
+          "price": null
+        }
       ],
       "price_range": "₩₩",
-      "features": ["오션뷰", "사이폰커피", "예약가능", "쿠폰"],
+      "features": [
+        "오션뷰",
+        "사이폰커피",
+        "예약가능",
+        "쿠폰"
+      ],
       "naver_reviews": 1693,
       "visitor_reviews": null,
       "blog_reviews": null,

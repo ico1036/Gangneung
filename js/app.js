@@ -369,9 +369,12 @@ function createCafeCard(cafe) {
   const rating = cafe.naver_rating ? `⭐ ${cafe.naver_rating}` : '-';
   const reviews = cafe.naver_reviews ? `리뷰 ${cafe.naver_reviews.toLocaleString()}개` : '';
   const tags = createTags(cafe);
+  const imageTags = createImageTags(cafe);
+  const imageHtml = createImageHtml(cafe);
 
   return `
     <article class="cafe-card" data-id="${cafe.id}">
+      ${imageHtml}
       <div class="cafe-header">
         <h3 class="cafe-name">${cafe.name}</h3>
         <p class="cafe-category">${cafe.category}</p>
@@ -387,6 +390,43 @@ function createCafeCard(cafe) {
       </div>
     </article>
   `;
+}
+
+// Create image HTML with fallback
+function createImageHtml(cafe) {
+  const imageSrc = cafe.image || cafe.local_image || 'images/default-cafe.svg';
+  const fallbackSrc = cafe.local_image || 'images/default-cafe.svg';
+  const defaultSrc = 'images/default-cafe.svg';
+
+  return `
+    <div class="cafe-image">
+      <img
+        src="${imageSrc}"
+        alt="${cafe.name}"
+        loading="lazy"
+        onerror="this.onerror=null; this.src='${fallbackSrc}'; if(this.src.indexOf('default-cafe.svg')===-1) this.onerror=function(){this.src='${defaultSrc}'}"
+      >
+      <div class="cafe-image-overlay">
+        ${createImageTags(cafe)}
+      </div>
+    </div>
+  `;
+}
+
+// Create tags for image overlay (limited)
+function createImageTags(cafe) {
+  const tags = [];
+  const viewTypes = cafe.view_type || [];
+  const features = cafe.features || [];
+
+  if (viewTypes.includes('오션뷰') || features.includes('오션뷰')) {
+    tags.push('<span class="cafe-tag ocean">오션뷰</span>');
+  }
+  if (viewTypes.includes('루프탑') || features.includes('루프탑')) {
+    tags.push('<span class="cafe-tag rooftop">루프탑</span>');
+  }
+
+  return tags.slice(0, 2).join('');
 }
 
 // Format hours for display

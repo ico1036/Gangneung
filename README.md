@@ -10,3 +10,39 @@
 ## 웹사이트
 
 https://ico1036.github.io/Gangneung/
+
+## 추천 일정표 (10:00 - 16:00)
+
+| 시간 | 장소 | 소요시간 |
+|------|------|---------|
+| 10:00 - 11:20 | 오죽헌 | 1시간 20분 |
+| 11:30 - 12:20 | 점심식사 | 50분 |
+| 12:30 - 13:20 | 선교장 | 50분 |
+| 13:30 - 15:30 | 참소리박물관 | 2시간 |
+| 15:30 - 16:00 | 경포호 산책 | 30분 |
+
+## 관람시간 근거자료
+
+### 오죽헌 (1~2시간)
+
+| 소스 | 관람 소요시간 |
+|------|-------------|
+| [오죽헌 공식 관람안내](https://www.gn.go.kr/museum/contents.do?key=891) | 약 2시간 |
+| [Trip.com 가이드](https://kr.trip.com/moments/theme/poi-ojukheon-96184-guides-993135/) | 1시간 30분 ~ 2시간 |
+| [hyunpost.com](https://hyunpost.com/%EC%98%A4%EC%A3%BD%ED%97%8C-%EC%9E%85%EC%9E%A5%EB%A3%8C-%EA%B4%80%EB%9E%8C%EC%8B%9C%EA%B0%84/) | 1~2시간 (해설 포함 3시간) |
+
+### 선교장 (해설 30~40분 + 자유관람)
+
+| 소스 | 관람 소요시간 |
+|------|-------------|
+| [선교장 공식사이트](https://knsgj.net/tour) | 해설 30~40분 |
+| [Trip.com 가이드](https://kr.trip.com/moments/theme/poi-seongyojang-house-90989-attraction-993137/) | 해설 30~40분 |
+
+### 참소리박물관 (1~2시간)
+
+| 소스 | 관람 소요시간 |
+|------|-------------|
+| [트립닷컴](https://us.trip.com/travel-guide/new-attraction/gangneung-si/chamsori-gramophone-museum-and-edison-science-museum-96200/) | 권장 1~2시간 |
+| [나무위키](https://namu.wiki/w/%EC%B0%B8%EC%86%8C%EB%A6%AC%EC%B6%95%EC%9D%8C%EA%B8%B0%C2%B7%EC%97%90%EB%94%94%EC%8A%A8%EA%B3%BC%ED%95%99%EB%B0%95%EB%AC%BC%EA%B4%80) | 매표마감 15:20 (폐관 1시간 40분 전) |
+
+> 리서치 일자: 2026-01-25

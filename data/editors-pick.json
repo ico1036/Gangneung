@@ -1,0 +1,79 @@
+{
+  "editors_pick": [
+    {
+      "id": 1,
+      "name": "차전자",
+      "category": "말차 카페",
+      "location": "초당동",
+      "description": "강릉 토박이가 운영하는 말차 전문 카페. 고향에 대한 애정으로 초당마을에 문을 열었다.",
+      "editor_comment": "진한 말차 한 잔으로 여행의 피로를 녹이기 좋은 곳",
+      "features": ["말차 전문", "초당마을", "로컬 감성"],
+      "naver_link": "https://naver.me/5W9gUu9a",
+      "verified_date": "2026-01-25"
+    },
+    {
+      "id": 2,
+      "name": "초당토박이할머니순두부",
+      "category": "순두부",
+      "location": "초당동",
+      "address": "강원 강릉시 초당동 273-2",
+      "phone": "033-651-9004",
+      "hours": {
+        "sunday": "08:00 - 20:00",
+        "daily": "08:00 - 20:00"
+      },
+      "closed_days": "화요일",
+      "description": "시골 할머니댁에 온 듯한 정겨운 분위기. 직접 만든 순두부의 고소하고 담백한 맛이 일품.",
+      "editor_comment": "아침 8시부터 영업해서 이른 아침 든든한 한 끼로 추천",
+      "signature_menu": ["순두부전골 10,000원", "초두부 8,000원", "청국장 10,000원"],
+      "features": ["아침식사 가능", "무료주차", "현지인 맛집"],
+      "naver_link": "https://naver.me/5pwsc66n",
+      "verified_date": "2026-01-25"
+    },
+    {
+      "id": 3,
+      "name": "안목 횟집",
+      "category": "횟집",
+      "location": "안목해변",
+      "description": "현지인만 아는 숨은 횟집. 자세한 정보는 비공개.",
+      "editor_comment": "부모님께 직접 전화 문의 필수. 현지인 네트워크로만 예약 가능한 특별한 곳.",
+      "features": ["현지인 추천", "전화 예약 필수", "프라이빗"],
+      "is_secret": true,
+      "verified_date": "2026-01-25"
+    },
+    {
+      "id": 4,
+      "name": "이츠모라멘",
+      "category": "라멘",
+      "location": "초당동",
+      "address": "강원 강릉시 초당원길 34",
+      "phone": "010-4000-2949",
+      "hours": {
+        "sunday": "11:00 - 20:30",
+        "daily": "11:00 - 20:30"
+      },
+      "closed_days": "월요일, 화요일",
+      "description": "오래된 한옥을 리모델링한 정통 돈코츠 라멘집. 진한 국물과 정갈한 인테리어가 매력.",
+      "editor_comment": "카라이 토리 라멘이 시그니처. 매운맛 1단계도 충분히 매움!",
+      "signature_menu": ["돈코츠 라멘", "카라이 토리 라멘"],
+      "features": ["한옥 인테리어", "웨이팅 있음", "회전율 좋음"],
+      "naver_link": "https://naver.me/GSDAC8uu",
+      "verified_date": "2026-01-25"
+    },
+    {
+      "id": 5,
+      "name": "그레이호텔",
+      "category": "숙소",
+      "location": "교동",
+      "address": "강원 강릉시 하슬라로192번길 6",
+      "phone": "033-655-1515",
+      "description": "2018년 오픈한 강릉 교동택지지구의 랜드마크 호텔. 오죽헌까지 차로 3분.",
+      "editor_comment": "에이스침대 최상급 베드와 이탈리아 원목 마루. 가성비 좋은 비즈니스 호텔.",
+      "features": ["오죽헌 3분", "무료주차", "강릉역 10분"],
+      "price_range": "약 70,000원~/1박",
+      "naver_link": "https://naver.me/FtTSDKmT",
+      "verified_date": "2026-01-25"
+    }
+  ],
+  "last_updated": "2026-01-25"
+}

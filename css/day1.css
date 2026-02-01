@@ -1,0 +1,566 @@
+/* ========================================
+   DAY 1 — 속초·고성 (Memento Mori)
+   ======================================== */
+
+/* Page Container */
+.day1-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 30%, #0f1419 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.day1-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse at 30% 10%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 90%, rgba(59, 130, 246, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.day1-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="0.5" fill="rgba(255,255,255,0.02)"/></svg>');
+  background-size: 30px 30px;
+  opacity: 0.8;
+}
+
+.day1-content {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  color: white;
+}
+
+/* Header */
+.day1-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.back-link {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.day-badge {
+  display: inline-block;
+  padding: 8px 24px;
+  background: rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #a78bfa;
+  margin-bottom: 16px;
+}
+
+.day1-title {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Memento Mori Section */
+.memento-mori {
+  margin-bottom: 60px;
+}
+
+.memento-box {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 24px;
+  padding: 48px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.memento-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a78bfa, transparent);
+}
+
+.memento-box .step-number {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 8px;
+}
+
+.memento-box .step-phase {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 16px;
+}
+
+.memento-keyword {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, #e2e8f0 0%, #a78bfa 50%, #e2e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 24px;
+}
+
+.memento-question {
+  font-size: 1.15rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+/* Timeline */
+.day1-timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.day1-timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg,
+    rgba(139, 92, 246, 0.4) 0%,
+    rgba(59, 130, 246, 0.4) 50%,
+    rgba(251, 146, 60, 0.4) 100%
+  );
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -40px;
+  top: 24px;
+  width: 32px;
+  height: 32px;
+  background: #1a1a1a;
+  border: 2px solid rgba(139, 92, 246, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marker-number {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #a78bfa;
+}
+
+.timeline-item.highlight .timeline-marker {
+  border-color: #f87171;
+  box-shadow: 0 0 20px rgba(248, 113, 113, 0.3);
+}
+
+.timeline-item.highlight .marker-number {
+  color: #f87171;
+}
+
+.timeline-item.final .timeline-marker {
+  border-color: #fb923c;
+  box-shadow: 0 0 20px rgba(251, 146, 60, 0.3);
+}
+
+.timeline-item.final .marker-number {
+  color: #fb923c;
+}
+
+/* Timeline Cards */
+.timeline-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 28px;
+  transition: all 0.4s ease;
+}
+
+.timeline-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(139, 92, 246, 0.3);
+  transform: translateX(4px);
+}
+
+.card-time {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(139, 92, 246, 0.8);
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.card-header {
+  margin-bottom: 16px;
+}
+
+.card-place {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.card-subtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+.card-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.keyword {
+  padding: 4px 12px;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #c4b5fd;
+  letter-spacing: 0.5px;
+}
+
+.card-body {
+  margin-bottom: 20px;
+}
+
+.card-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.card-menu li {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.card-menu .menu-note {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 8px;
+  border-left: 2px solid rgba(139, 92, 246, 0.3);
+}
+
+.card-context {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-features li {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.card-features li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: #a78bfa;
+  font-weight: bold;
+}
+
+.card-activity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 12px;
+}
+
+.activity-icon {
+  font-size: 1.5rem;
+}
+
+.card-activity p {
+  color: #93c5fd;
+  margin: 0;
+}
+
+/* Insight Box */
+.card-insight {
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid rgba(139, 92, 246, 0.5);
+  border-radius: 0 12px 12px 0;
+}
+
+.card-insight p {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.card-insight em {
+  font-style: normal;
+  color: #c4b5fd;
+}
+
+.insight-note {
+  margin-top: 12px !important;
+  font-size: 0.8rem !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* DMZ Card Special */
+.dmz-card {
+  border-color: rgba(248, 113, 113, 0.2);
+  background: rgba(248, 113, 113, 0.03);
+}
+
+.dmz-card:hover {
+  border-color: rgba(248, 113, 113, 0.4);
+}
+
+.dmz-card .card-time {
+  color: #f87171;
+}
+
+.dmz-card .keyword {
+  background: rgba(248, 113, 113, 0.15);
+  border-color: rgba(248, 113, 113, 0.3);
+  color: #fca5a5;
+}
+
+.card-question {
+  margin-top: 24px;
+  padding: 24px;
+  background: rgba(248, 113, 113, 0.08);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.question-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(248, 113, 113, 0.8);
+  margin-bottom: 16px;
+}
+
+.question-text {
+  font-size: 1.15rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+.question-action {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #fca5a5;
+}
+
+/* Sunset Card */
+.sunset-card {
+  border-color: rgba(251, 146, 60, 0.2);
+  background: linear-gradient(135deg, rgba(251, 146, 60, 0.05) 0%, rgba(251, 113, 133, 0.03) 100%);
+}
+
+.sunset-card:hover {
+  border-color: rgba(251, 146, 60, 0.4);
+}
+
+.sunset-card .card-time {
+  color: #fb923c;
+}
+
+.sunset-desc {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+.final-insight {
+  margin-top: 24px;
+  border-left-color: rgba(251, 146, 60, 0.5);
+  text-align: center;
+}
+
+.final-insight em {
+  color: #fdba74;
+}
+
+/* Day Summary */
+.day1-summary {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.day1-summary .summary-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+}
+
+.day1-summary h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 16px;
+}
+
+.day1-summary p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.day1-summary .summary-text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.day1-summary em {
+  font-style: normal;
+  color: #a78bfa;
+}
+
+/* Navigation */
+.day-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 48px;
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 215, 0, 0.15);
+  border-color: rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.nav-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: rgba(255, 215, 0, 0.6);
+  margin-bottom: 8px;
+}
+
+.nav-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffd700;
+  margin-bottom: 4px;
+}
+
+.nav-subtitle {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .day1-content {
+    padding: 24px 16px 60px;
+  }
+
+  .day1-timeline {
+    padding-left: 32px;
+  }
+
+  .day1-timeline::before {
+    left: 11px;
+  }
+
+  .timeline-marker {
+    left: -32px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .marker-number {
+    font-size: 0.75rem;
+  }
+
+  .timeline-card {
+    padding: 20px;
+  }
+
+  .card-place {
+    font-size: 1.3rem;
+  }
+
+  .memento-box {
+    padding: 32px 20px;
+  }
+
+  .nav-btn {
+    padding: 20px 32px;
+  }
+}

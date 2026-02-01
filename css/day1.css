@@ -39,6 +39,98 @@
   color: white;
 }
 
+/* Travel Concept */
+.travel-concept {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 32px 24px;
+}
+
+.concept-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.concept-quote {
+  font-size: 1.3rem;
+  line-height: 1.9;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 16px;
+}
+
+.concept-desc {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.concept-desc em {
+  font-style: normal;
+  color: #a78bfa;
+}
+
+/* Day Navigation */
+.day-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.day-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 24px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.day-nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.day-nav-item.active {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.day-nav-number {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 4px;
+}
+
+.day-nav-item.active .day-nav-number {
+  color: #a78bfa;
+}
+
+.day-nav-place {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.day-nav-item.active .day-nav-place {
+  color: white;
+}
+
 /* Header */
 .day1-header {
   text-align: center;
@@ -533,6 +625,57 @@
 .day1-summary em {
   font-style: normal;
   color: #a78bfa;
+}
+
+/* Obituary AI Section */
+.obituary-ai {
+  margin-bottom: 40px;
+}
+
+.obituary-box {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(248, 113, 113, 0.05) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+}
+
+.obituary-box h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.obituary-desc {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+}
+
+.obituary-link {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+}
+
+.obituary-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(139, 92, 246, 0.4);
+}
+
+.obituary-note {
+  margin-top: 16px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* Navigation */

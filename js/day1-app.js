@@ -313,6 +313,7 @@ function formatHours(hours) {
   if (!hours) return '영업시간 확인 필요';
   if (hours.daily) return hours.daily;
   if (hours.weekdays && hours.weekend) return `평일 ${hours.weekdays} / 주말 ${hours.weekend}`;
+  if (hours.fri_sat_sun && hours.mon_tue_thu) return `월화목 ${hours.mon_tue_thu} / 금토일 ${hours.fri_sat_sun}`;
   if (hours.weekdays) return `평일 ${hours.weekdays}`;
   return '영업시간 확인 필요';
 }
@@ -467,7 +468,7 @@ function renderRestaurants() {
 
 // Create restaurant card HTML
 function createRestaurantCard(restaurant) {
-  const dailyHours = restaurant.hours?.daily || '영업시간 확인 필요';
+  const dailyHours = formatHours(restaurant.hours);
   const reviews = restaurant.naver_reviews ? restaurant.naver_reviews.toLocaleString() : '-';
   const tags = createRestaurantTags(restaurant);
   const hotplaceBadge = restaurant.is_hotplace ? '<div class="hotplace-badge">HOT</div>' : '';
@@ -540,7 +541,7 @@ function openRestaurantModal(restaurant) {
   const highlights = (restaurant.highlights || []).map(h => `<li>${h}</li>`).join('');
   const tags = (restaurant.features || []).map(f => `<span class="cafe-tag">${f}</span>`).join('');
 
-  const dailyHours = restaurant.hours?.daily || '영업시간 확인 필요';
+  const dailyHours = formatHours(restaurant.hours);
 
   let hoursHtml = `
     <div class="modal-info-row">

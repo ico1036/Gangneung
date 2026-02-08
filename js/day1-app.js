@@ -51,6 +51,15 @@ function setupIntroPage() {
     showMainSite();
   });
 
+  // URL 파라미터로 바로 가이드 탭 열기 (index.html에서 진입 시)
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('guide') === 'true') {
+    introPage.classList.add('hidden');
+    mainSite.classList.add('visible');
+    mainSite.style.opacity = '1';
+    window.scrollTo(0, 0);
+  }
+
   const logo = document.querySelector('.logo');
   if (logo) {
     logo.addEventListener('click', (e) => {

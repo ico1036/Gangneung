@@ -282,7 +282,7 @@ function createCafeCard(cafe) {
       <div class="cafe-body">
         <p class="cafe-address">${cafe.address}</p>
         <p class="cafe-hours">${hours}</p>
-        ${cafe.closed_days ? `<p class="cafe-closed">${cafe.closed_days} 휴무</p>` : ''}
+        ${cafe.closed_days ? `<p class="cafe-closed">${cafe.closed_days.includes('휴무') ? cafe.closed_days : cafe.closed_days + ' 휴무'}</p>` : ''}
         <div class="cafe-tags">${tags}</div>
       </div>
       <div class="cafe-footer">
@@ -490,7 +490,7 @@ function createRestaurantCard(restaurant) {
 
   let closedDaysHtml = '';
   if (restaurant.closed_days) {
-    closedDaysHtml = `<p class="restaurant-closed">${restaurant.closed_days} 휴무</p>`;
+    closedDaysHtml = `<p class="restaurant-closed">${restaurant.closed_days.includes('휴무') ? restaurant.closed_days : restaurant.closed_days + ' 휴무'}</p>`;
   }
 
   return `

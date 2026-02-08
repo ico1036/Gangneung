@@ -1,0 +1,222 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "영광정메밀국수",
+      "category": "메밀국수",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시 떡밭재로 229",
+      "phone": "033-638-0088",
+      "hours": {
+        "daily": "10:00 - 19:30"
+      },
+      "break_time": null,
+      "closed_days": "화요일",
+      "signature_menu": [
+        { "name": "메밀국수", "description": "담백한 메밀면의 시원한 국수" },
+        { "name": "감자전", "description": "바삭한 강원도 감자전" }
+      ],
+      "price_range": "₩₩",
+      "features": ["주차", "단체이용가능"],
+      "naver_reviews": null,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/영광정메밀국수%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "양양 본점의 속초 분점",
+        "담백한 메밀국수와 감자전이 인기",
+        "화요일 정기휴무"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "생통삼겹살",
+      "category": "삼겹살",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시 밤골길 15",
+      "phone": "033-633-0280",
+      "hours": {
+        "daily": "16:00 - 22:00"
+      },
+      "break_time": null,
+      "closed_days": "일요일",
+      "signature_menu": [
+        { "name": "생삼겹살", "description": "두껍게 썬 국내산 생삼겹살" },
+        { "name": "목살", "description": "부드러운 국내산 목살" }
+      ],
+      "price_range": "₩₩",
+      "features": ["예약", "단체이용가능", "무선인터넷"],
+      "naver_reviews": 295,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/생통삼겹살%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "현지인 추천 삼겹살 맛집",
+        "두꺼운 국내산 생삼겹살",
+        "일요일 휴무 주의"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "아지트",
+      "category": "한식",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시",
+      "phone": null,
+      "hours": {
+        "daily": "영업시간 확인 필요"
+      },
+      "break_time": null,
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "대표메뉴", "description": "방문 전 확인 필요" }
+      ],
+      "price_range": "₩₩",
+      "features": [],
+      "naver_reviews": null,
+      "is_hotplace": false,
+      "group_friendly": false,
+      "naver_link": "https://map.naver.com/p/search/아지트%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "속초 현지인 추천 맛집",
+        "방문 전 영업시간 확인 필수"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "함흥냉면옥",
+      "category": "냉면",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시 청초호반로 299",
+      "phone": "033-633-2256",
+      "hours": {
+        "daily": "10:30 - 20:30"
+      },
+      "break_time": null,
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "함흥냉면", "description": "1951년부터 이어온 원조 함흥식 냉면" },
+        { "name": "비빔냉면", "description": "매콤한 양념의 비빔냉면" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능", "주차"],
+      "naver_reviews": null,
+      "is_hotplace": true,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/함흥냉면옥%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "1951년 개업, 우리나라 최초 함흥냉면 식당",
+        "실향민이 전하는 정통 함흥냉면 맛",
+        "속초 대표 명소"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "원산면옥",
+      "category": "냉면",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시 중앙로 91-6",
+      "phone": null,
+      "hours": {
+        "daily": "10:30 - 20:30"
+      },
+      "break_time": null,
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "냉면", "description": "30년 넘게 이어온 원산식 냉면" },
+        { "name": "만두", "description": "수제 만두" }
+      ],
+      "price_range": "₩₩",
+      "features": ["단체이용가능"],
+      "naver_reviews": null,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/원산면옥%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "30년 넘게 이어온 속초 냉면 명가",
+        "실향민의 손맛을 이어받은 정통 냉면",
+        "속초 중앙로에 위치"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "대게바다",
+      "category": "대게",
+      "location": "daepo",
+      "location_name": "대포항",
+      "address": "강원 속초시 대포항희망길 95 1층",
+      "phone": null,
+      "hours": {
+        "daily": "10:00 - 22:00"
+      },
+      "break_time": null,
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "대게 코스", "description": "신선한 속초산 대게 풀코스" },
+        { "name": "킹크랩", "description": "프리미엄 킹크랩 요리" }
+      ],
+      "price_range": "₩₩₩",
+      "features": ["예약", "주차", "단체이용가능"],
+      "naver_reviews": null,
+      "is_hotplace": true,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/search/대게바다%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "대포항 바로 앞 대게 전문점",
+        "신선한 속초산 대게 요리",
+        "예약 필수"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "속초 고궁",
+      "category": "한식",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시",
+      "phone": null,
+      "hours": {
+        "daily": "영업시간 확인 필요"
+      },
+      "break_time": null,
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "대표메뉴", "description": "방문 전 확인 필요" }
+      ],
+      "price_range": "₩₩",
+      "features": [],
+      "naver_reviews": null,
+      "is_hotplace": false,
+      "group_friendly": false,
+      "naver_link": "https://map.naver.com/p/search/고궁%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "속초 현지인 추천 맛집",
+        "방문 전 영업시간 확인 필수"
+      ]
+    }
+  ],
+  "locations": {
+    "sokcho-city": {
+      "name": "속초 시내",
+      "description": "속초 중심가 일대"
+    },
+    "daepo": {
+      "name": "대포항",
+      "description": "속초 대포항 수산시장 일대"
+    }
+  },
+  "last_updated": "2026-02-08",
+  "total_verified": 7
+}

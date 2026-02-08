@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="속초·고성 여행 코스 - Memento Mori. 삶을 끝에서 바라보는 성찰의 여정">
-  <meta name="keywords" content="속초, 고성, DMZ, 영랑호, 화진포, 통일전망대">
+  <meta name="keywords" content="속초, 고성, DMZ, 영랑호, 화진포, 통일전망대, 속초맛집, 속초카페">
   <title>DAY 1 — 속초·고성 | Memento Mori</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="css/day1.css">
 </head>
 <body>
-  <section class="day1-page">
+  <!-- Intro Page -->
+  <section class="day1-page" id="introPage">
     <div class="day1-overlay"></div>
     <div class="day1-content">
 
@@ -201,9 +202,17 @@
         </div>
       </div>
 
+      <!-- CTA Button -->
+      <button class="intro-cta" id="enterSite">
+        <span>여행 가이드 시작하기</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+
       <!-- Navigation -->
       <div class="day-navigation">
-        <a href="index.html" class="nav-btn next-day">
+        <a href="day2.html" class="nav-btn next-day">
           <span class="nav-label">NEXT</span>
           <span class="nav-title">DAY 2 — 강릉</span>
           <span class="nav-subtitle">The Resonant Life</span>
@@ -212,5 +221,273 @@
 
     </div>
   </section>
+
+  <!-- Main Site Container -->
+  <div class="main-site" id="mainSite">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <span class="logo-icon">&#127969;</span>
+          <span class="logo-text">속초 여행 가이드</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#restaurants" class="nav-section-link" data-page="restaurant">맛집 목록</a></li>
+          <li><a href="#cafes" class="nav-section-link" data-page="cafe">카페 목록</a></li>
+          <li><a href="#info">여행 정보</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="메뉴">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Tab Navigation -->
+  <div class="main-tabs">
+    <div class="container">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="restaurant">
+          <span class="tab-icon">&#127858;</span>
+          <span class="tab-text">속초 맛집</span>
+        </button>
+        <button class="tab-btn" data-tab="cafe">
+          <span class="tab-icon">&#9749;</span>
+          <span class="tab-text">속초 카페</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab Content: Restaurant -->
+  <div class="tab-content active" data-tab-content="restaurant">
+
+  <!-- Restaurant Hero Section -->
+  <section class="hero restaurant-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">속초 맛집 가이드</h1>
+      <p class="hero-subtitle">속초 현지인이 추천하는<br>검증된 맛집 리스트</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" id="totalRestaurants">7</span>
+          <span class="stat-label">검증된 식당</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2</span>
+          <span class="stat-label">핫플레이스</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2026.02.08</span>
+          <span class="stat-label">마지막 업데이트</span>
+        </div>
+      </div>
+      <a href="#restaurants" class="hero-cta">맛집 둘러보기</a>
+    </div>
+  </section>
+
+  <!-- Restaurant Quick Filter -->
+  <section class="quick-filter restaurant-filter">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-restaurant-filter="all">전체</button>
+        <button class="filter-btn" data-restaurant-filter="sokcho-city">속초 시내</button>
+        <button class="filter-btn" data-restaurant-filter="daepo">대포항</button>
+        <button class="filter-btn hotplace-filter" data-restaurant-filter="hotplace">핫플</button>
+        <button class="filter-btn" data-restaurant-filter="group">단체 가능</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant List -->
+  <section id="restaurants" class="restaurants-section">
+    <div class="container">
+      <h2 class="section-title">속초 맛집</h2>
+      <p class="section-desc">모든 정보는 네이버 지도를 통해 검증했습니다</p>
+
+      <!-- Sort Options -->
+      <div class="sort-options">
+        <select id="restaurantSortSelect">
+          <option value="reviews">리뷰 많은순</option>
+          <option value="name">이름순</option>
+        </select>
+      </div>
+
+      <!-- Restaurant Grid -->
+      <div class="restaurant-grid" id="restaurantGrid">
+        <!-- Restaurants will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant Info Section -->
+  <section class="info-section restaurant-info">
+    <div class="container">
+      <h2 class="section-title">속초 여행 정보</h2>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">&#127970;</div>
+          <h3>속초 중앙시장</h3>
+          <p>속초 최대 전통시장<br>닭강정, 순대 등 먹거리<br>관광형 시장으로 유명</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">&#9968;</div>
+          <h3>설악산</h3>
+          <p>한국 대표 명산<br>울산바위, 비선대, 권금성<br>사계절 다양한 트레킹</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">&#9888;</div>
+          <h3>주의사항</h3>
+          <p>화·수요일 휴무 맛집 다수<br>영업시간 사전 확인 필수<br>주말 웨이팅 가능성</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">&#128663;</div>
+          <h3>이동 팁</h3>
+          <p>속초IC에서 시내 약 15분<br>대포항 ↔ 속초시내 차량 10분<br>속초해변 드라이브 추천</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- End Tab Content: Restaurant -->
+
+  <!-- Tab Content: Cafe -->
+  <div class="tab-content" data-tab-content="cafe">
+
+  <!-- Cafe Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">속초 카페 가이드</h1>
+      <p class="hero-subtitle">설악산뷰부터 감성 카페까지<br>속초의 검증된 카페 정보</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" id="totalCafes">6</span>
+          <span class="stat-label">검증된 카페</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label">마운틴뷰 카페</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2026.02.08</span>
+          <span class="stat-label">마지막 업데이트</span>
+        </div>
+      </div>
+      <a href="#cafes" class="hero-cta">카페 둘러보기</a>
+    </div>
+  </section>
+
+  <!-- Cafe Quick Filter -->
+  <section class="quick-filter">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">전체</button>
+        <button class="filter-btn" data-filter="mountain">마운틴뷰</button>
+        <button class="filter-btn" data-filter="dessert">디저트</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cafe List -->
+  <section id="cafes" class="cafes-section">
+    <div class="container">
+      <h2 class="section-title">속초 카페</h2>
+      <p class="section-desc">모든 정보는 네이버 지도를 통해 검증했습니다</p>
+
+      <!-- Sort Options -->
+      <div class="sort-options">
+        <select id="sortSelect">
+          <option value="reviews">리뷰 많은순</option>
+          <option value="name">이름순</option>
+        </select>
+      </div>
+
+      <!-- Cafe Grid -->
+      <div class="cafe-grid" id="cafeGrid">
+        <!-- Cafes will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cafe Info Section -->
+  <section id="info" class="info-section">
+    <div class="container">
+      <h2 class="section-title">카페 이용 정보</h2>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">&#9968;</div>
+          <h3>설악산뷰 카페</h3>
+          <p>속초 카페의 가장 큰 매력<br>설악산과 울산바위 조망<br>날씨 좋은 날 방문 추천</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">&#128663;</div>
+          <h3>주차 정보</h3>
+          <p>대부분 카페 주차 가능<br>시내 카페는 공영주차장 이용<br>주말은 주차장 혼잡 가능</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">&#9200;</div>
+          <h3>추천 방문 시간</h3>
+          <p>오전 10시 ~ 오후 6시<br>라스트오더 확인 필수<br>수요일 휴무 카페 다수</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">&#128247;</div>
+          <h3>포토 스팟</h3>
+          <p>카페 긷: 울산바위 전망<br>시드누아: 설악산 통창<br>다온: 설악산 파노라마뷰</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- End Tab Content: Cafe -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>속초 여행 가이드</h3>
+          <p>속초 여행을 계획하는 모든 분들을 위한 검증된 맛집·카페 정보</p>
+          <p class="footer-update">마지막 업데이트: 2026.02.08</p>
+        </div>
+        <div class="footer-links">
+          <h4>바로가기</h4>
+          <ul>
+            <li><a href="#restaurants">맛집 목록</a></li>
+            <li><a href="#cafes">카페 목록</a></li>
+            <li><a href="#info">여행 정보</a></li>
+          </ul>
+        </div>
+        <div class="footer-disclaimer">
+          <h4>안내</h4>
+          <p>본 사이트의 정보는 네이버 지도를 기반으로 검증되었습니다. 방문 전 영업시간을 다시 한번 확인해주세요.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 속초 여행 가이드. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  </div><!-- End Main Site Container -->
+
+  <!-- Modal -->
+  <div class="modal" id="cafeModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Modal content will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/day1-app.js"></script>
 </body>
 </html>

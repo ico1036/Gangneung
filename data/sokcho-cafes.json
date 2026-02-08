@@ -1,0 +1,172 @@
+{
+  "cafes": [
+    {
+      "id": 1,
+      "name": "흰다정",
+      "category": "카페,디저트",
+      "address": "강원 속초시 수복로 248",
+      "phone": "070-8830-9322",
+      "hours": {
+        "daily": "11:00 - 18:00",
+        "last_order": "17:30"
+      },
+      "closed_days": "수요일",
+      "view_type": null,
+      "signature_menu": [
+        { "name": "수제 디저트", "price": null, "description": "계절별 수제 디저트" },
+        { "name": "핸드드립 커피", "price": null }
+      ],
+      "price_range": "₩₩",
+      "features": ["디저트", "감성인테리어"],
+      "naver_reviews": null,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/흰다정%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "속초 감성 디저트 카페",
+        "수제 디저트가 인기",
+        "수요일 정기휴무"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "하도문속초",
+      "category": "카페",
+      "address": "강원 속초시 하도문길 50",
+      "phone": "0507-1335-3411",
+      "hours": {
+        "daily": "11:00 - 18:00",
+        "last_order": "17:00"
+      },
+      "closed_days": "화요일",
+      "view_type": null,
+      "signature_menu": [
+        { "name": "커피", "price": null, "description": "시그니처 커피" }
+      ],
+      "price_range": "₩₩",
+      "features": ["감성인테리어", "포토존"],
+      "naver_reviews": null,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/하도문속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "속초 하도문 일대 감성 카페",
+        "분위기 좋은 인테리어",
+        "화요일 정기휴무"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "카페도문",
+      "category": "카페,디저트",
+      "address": "강원 속초시 상도문1길 31",
+      "phone": null,
+      "hours": {
+        "daily": "11:00 - 19:00",
+        "last_order": "18:00"
+      },
+      "closed_days": "수요일",
+      "view_type": null,
+      "signature_menu": [
+        { "name": "커피", "price": null },
+        { "name": "디저트", "price": null }
+      ],
+      "price_range": "₩₩",
+      "features": ["디저트", "감성인테리어"],
+      "naver_reviews": null,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/카페도문%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "도문동 감성 카페",
+        "수요일 정기휴무"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "다온",
+      "category": "카페",
+      "address": "강원 속초시 설악산로 517",
+      "phone": "0507-1397-5571",
+      "hours": {
+        "daily": "09:00 - 21:30"
+      },
+      "closed_days": null,
+      "view_type": ["설악산뷰"],
+      "signature_menu": [
+        { "name": "커피", "price": null },
+        { "name": "음료", "price": null }
+      ],
+      "price_range": "₩₩",
+      "features": ["설악산뷰", "주차", "넓은공간"],
+      "naver_reviews": null,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/다온%20속초%20카페",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "설악산 뷰가 아름다운 카페",
+        "넓은 공간과 편안한 분위기",
+        "09시부터 21시 30분까지 영업"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "카페 긷",
+      "category": "카페",
+      "address": "강원 속초시 원암학사평길 60",
+      "phone": "0507-1362-4043",
+      "hours": {
+        "daily": "11:00 - 18:00",
+        "last_order": "17:30"
+      },
+      "closed_days": "수요일",
+      "view_type": ["울산바위뷰"],
+      "signature_menu": [
+        { "name": "커피", "price": null },
+        { "name": "디저트", "price": null }
+      ],
+      "price_range": "₩₩",
+      "features": ["울산바위뷰", "주차", "노키즈존", "키즈케어존"],
+      "naver_reviews": null,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/카페긷%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "울산바위가 보이는 뷰 맛집 카페",
+        "모던한 인테리어와 자연 전망",
+        "수요일 정기휴무"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "시드누아 속초점",
+      "category": "카페,베이커리",
+      "address": "강원 속초시 바람꽃마을1길 38",
+      "phone": null,
+      "hours": {
+        "weekdays": "10:00 - 18:00",
+        "weekend": "10:00 - 21:00"
+      },
+      "closed_days": null,
+      "view_type": ["설악산뷰"],
+      "signature_menu": [
+        { "name": "수제 빵", "price": null, "description": "자체 제작 다양한 빵과 케이크" },
+        { "name": "커피", "price": null }
+      ],
+      "price_range": "₩₩",
+      "features": ["설악산뷰", "베이커리", "넓은공간", "테라스", "주차"],
+      "naver_reviews": null,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/search/시드누아%20속초",
+      "verified_date": "2026-02-08",
+      "highlights": [
+        "설악산 전망의 대형 카페",
+        "자체 제작 빵과 케이크",
+        "넓은 통창과 테라스에서 설악산 감상",
+        "주말 21시까지 영업"
+      ]
+    }
+  ],
+  "last_updated": "2026-02-08",
+  "total_verified": 6
+}

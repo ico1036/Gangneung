@@ -273,8 +273,11 @@ function createCafeCard(cafe) {
   const reviews = cafe.naver_reviews ? `리뷰 ${cafe.naver_reviews.toLocaleString()}개` : '';
   const tags = createCafeTags(cafe);
 
+  const imageHtml = cafe.image ? `<div class="card-image"><img src="${cafe.image}" alt="${cafe.name}" loading="lazy"></div>` : '';
+
   return `
     <article class="cafe-card" data-id="${cafe.id}">
+      ${imageHtml}
       <div class="cafe-header">
         <h3 class="cafe-name">${cafe.name}</h3>
         <p class="cafe-category">${cafe.category}</p>
@@ -493,8 +496,11 @@ function createRestaurantCard(restaurant) {
     closedDaysHtml = `<p class="restaurant-closed">${restaurant.closed_days.includes('휴무') ? restaurant.closed_days : restaurant.closed_days + ' 휴무'}</p>`;
   }
 
+  const imageHtml = restaurant.image ? `<div class="card-image"><img src="${restaurant.image}" alt="${restaurant.name}" loading="lazy"></div>` : '';
+
   return `
     <article class="restaurant-card ${hotplaceClass}" data-id="${restaurant.id}">
+      ${imageHtml}
       ${hotplaceBadge}
       <div class="restaurant-header">
         <h3 class="restaurant-name">${restaurant.name}</h3>

@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "영광정메밀국수",
+      "image": "images/sokcho-restaurants/younggwang.jpg",
       "category": "막국수",
       "location": "yangyang",
       "location_name": "양양 (속초 근교)",
@@ -35,6 +36,7 @@
     {
       "id": 2,
       "name": "생통삼겹살",
+      "image": "images/sokcho-restaurants/saengtong.jpg",
       "category": "삼겹살",
       "location": "sokcho-city",
       "location_name": "속초 시내",
@@ -65,6 +67,7 @@
     {
       "id": 3,
       "name": "아지트",
+      "image": "images/sokcho-restaurants/azit.jpg",
       "category": "포장마차,해산물",
       "location": "sokcho-city",
       "location_name": "동명항",
@@ -98,6 +101,7 @@
     {
       "id": 4,
       "name": "함흥냉면옥 속초본점",
+      "image": "images/sokcho-restaurants/hamheung.jpg",
       "category": "냉면",
       "location": "sokcho-city",
       "location_name": "속초 시내",
@@ -131,6 +135,7 @@
     {
       "id": 5,
       "name": "원산면옥",
+      "image": "images/sokcho-restaurants/wonsan.jpg",
       "category": "냉면",
       "location": "sokcho-city",
       "location_name": "속초 시내",
@@ -162,6 +167,7 @@
     {
       "id": 6,
       "name": "대게바다",
+      "image": "images/sokcho-restaurants/daege.jpg",
       "category": "대게",
       "location": "daepo",
       "location_name": "대포항",
@@ -192,6 +198,7 @@
     {
       "id": 7,
       "name": "고궁회관 속초본점",
+      "image": "images/sokcho-restaurants/gogung.jpg",
       "category": "생선조림",
       "location": "sokcho-city",
       "location_name": "속초 시내",

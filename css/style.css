@@ -191,6 +191,15 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
   margin-bottom: 60px;
+  max-width: 100%;
+}
+
+/* When only 1 step card, center it and limit width */
+.intro-steps:has(.intro-step:only-child) {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr;
 }
 
 .intro-step {

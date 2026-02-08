@@ -125,27 +125,28 @@
       "location": "sokcho-city",
       "location_name": "속초 시내",
       "address": "강원 속초시 중앙로 91-6",
-      "phone": null,
+      "phone": "033-633-8838",
       "hours": {
-        "daily": "10:30 - 20:30"
+        "daily": "10:30 - 19:30",
+        "last_order": "19:25"
       },
       "break_time": null,
-      "closed_days": null,
+      "closed_days": "화요일",
       "signature_menu": [
-        { "name": "냉면", "description": "30년 넘게 이어온 원산식 냉면" },
-        { "name": "만두", "description": "수제 만두" }
+        { "name": "함흥냉면", "description": "명태회가 들어간 정통 함흥냉면" },
+        { "name": "물냉면", "description": "깊은 육수의 물냉면" }
       ],
       "price_range": "₩₩",
-      "features": ["단체이용가능"],
-      "naver_reviews": null,
+      "features": ["단체이용가능", "주차", "예약", "배달", "포장"],
+      "naver_reviews": 366,
       "is_hotplace": false,
       "group_friendly": true,
-      "naver_link": "https://map.naver.com/p/search/원산면옥%20속초",
+      "naver_link": "https://map.naver.com/p/entry/place/15009187",
       "verified_date": "2026-02-08",
       "highlights": [
-        "30년 넘게 이어온 속초 냉면 명가",
-        "실향민의 손맛을 이어받은 정통 냉면",
-        "속초 중앙로에 위치"
+        "30년 넘게 이어온 속초 함흥냉면 명가",
+        "명태회가 들어간 정통 함흥냉면",
+        "무료 주차 12대, 화요일 정기휴무"
       ]
     },
     {
@@ -154,56 +155,59 @@
       "category": "대게",
       "location": "daepo",
       "location_name": "대포항",
-      "address": "강원 속초시 대포항희망길 95 1층",
-      "phone": null,
+      "address": "강원 속초시 대포항길 20",
+      "phone": "010-5969-9600",
       "hours": {
         "daily": "10:00 - 22:00"
       },
       "break_time": null,
       "closed_days": null,
       "signature_menu": [
-        { "name": "대게 코스", "description": "신선한 속초산 대게 풀코스" },
-        { "name": "킹크랩", "description": "프리미엄 킹크랩 요리" }
+        { "name": "대게 코스", "description": "저렴한 가격의 속초산 대게 풀코스" },
+        { "name": "물회", "description": "신선한 물회와 각종 스키다시" }
       ],
       "price_range": "₩₩₩",
-      "features": ["예약", "주차", "단체이용가능"],
-      "naver_reviews": null,
-      "is_hotplace": true,
+      "features": ["예약", "주차", "단체이용가능", "포장"],
+      "naver_reviews": 677,
+      "is_hotplace": false,
       "group_friendly": true,
-      "naver_link": "https://map.naver.com/p/search/대게바다%20속초",
+      "naver_link": "https://map.naver.com/p/entry/place/1586789675",
       "verified_date": "2026-02-08",
       "highlights": [
-        "대포항 바로 앞 대게 전문점",
-        "신선한 속초산 대게 요리",
-        "예약 필수"
+        "대포항길 20으로 이전 (새 주소 확인)",
+        "단체석 40~60명 수용 가능",
+        "저렴한 가격에 대게를 즐길 수 있는 맛집"
       ]
     },
     {
       "id": 7,
-      "name": "속초 고궁",
-      "category": "한식",
+      "name": "고궁회관 속초본점",
+      "category": "생선조림",
       "location": "sokcho-city",
       "location_name": "속초 시내",
-      "address": "강원 속초시",
-      "phone": null,
+      "address": "강원 속초시 번영로 203",
+      "phone": "0507-1358-5359",
       "hours": {
-        "daily": "영업시간 확인 필요"
+        "daily": "09:30 - 20:30"
       },
       "break_time": null,
-      "closed_days": null,
+      "closed_days": "목요일",
       "signature_menu": [
-        { "name": "대표메뉴", "description": "방문 전 확인 필요" }
+        { "name": "가오리조림", "description": "30년 전통 대표 메뉴 (소 4만/중 5만/대 6만)" },
+        { "name": "모듬생선찜", "description": "TV 방송 소개된 인기 메뉴" }
       ],
-      "price_range": "₩₩",
-      "features": [],
-      "naver_reviews": null,
-      "is_hotplace": false,
+      "price_range": "₩₩₩",
+      "features": ["주차"],
+      "naver_reviews": 1174,
+      "naver_rating": 4.41,
+      "is_hotplace": true,
       "group_friendly": false,
-      "naver_link": "https://map.naver.com/p/search/고궁%20속초",
+      "naver_link": "https://map.naver.com/p/entry/place/32066460",
       "verified_date": "2026-02-08",
       "highlights": [
-        "속초 현지인 추천 맛집",
-        "방문 전 영업시간 확인 필수"
+        "30년 넘은 현지인 생선조림 맛집",
+        "2TV생생정보 출연 (모둠생선찜)",
+        "목요일 정기휴무, 무료 주차"
       ]
     }
   ],

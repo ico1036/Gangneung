@@ -227,6 +227,169 @@
         "목요일 정기휴무, 무료 주차"
       ]
     }
+    ,
+    {
+      "id": 8,
+      "name": "감자바우",
+      "image": null,
+      "category": "한식",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시 청초호반로 242",
+      "phone": "033-632-0734",
+      "hours": {
+        "daily": "10:00 - 20:00",
+        "last_order": "19:30"
+      },
+      "break_time": "15:00 - 17:00",
+      "closed_days": "수요일",
+      "signature_menu": [
+        { "name": "감자옹심이", "description": "쫀득한 감자옹심이 전문" },
+        { "name": "오징어회국수", "description": "새콤한 회국수 (가자미회국수도 인기)" },
+        { "name": "감자전", "description": "바삭한 강원도 감자전" }
+      ],
+      "price_range": "₩₩",
+      "features": ["주차", "단체이용가능", "포장"],
+      "naver_reviews": 2063,
+      "naver_rating": 4.36,
+      "is_hotplace": true,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/entry/place/13164956",
+      "verified_date": "2026-02-10",
+      "highlights": [
+        "백년가게 인증! 감자옹심이 전문점",
+        "토요일은밥이좋아 출연, 블루리본 선정",
+        "브레이크타임 15~17시, 수요일 휴무"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "대추한알가든쌈고기",
+      "image": null,
+      "category": "쌈고기,한식",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시 설악산로 216 1층",
+      "phone": "033-638-1201",
+      "hours": {
+        "daily": "11:00 - 21:00",
+        "last_order": "20:00"
+      },
+      "break_time": "14:30 - 16:30",
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "쌈고기 정식", "description": "다양한 쌈채소와 함께 즐기는 고기" },
+        { "name": "된장찌개", "description": "된장찌개 정식" }
+      ],
+      "price_range": "₩₩",
+      "features": ["주차", "단체이용가능", "예약", "포장", "유아의자", "휠체어출입"],
+      "naver_reviews": 770,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/entry/place/1143853695",
+      "verified_date": "2026-02-10",
+      "highlights": [
+        "안심식당 인증, 다양한 쌈채소와 즐기는 고기정식",
+        "점심 입장마감 14:30, 브레이크타임 14:30~16:30",
+        "설악산로 위치, 넓은 주차 공간"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "호인스시",
+      "image": null,
+      "category": "일식,오마카세",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시 영랑로 19",
+      "phone": "033-632-7227",
+      "hours": {
+        "daily": "10:00 - 22:00"
+      },
+      "break_time": null,
+      "closed_days": null,
+      "signature_menu": [
+        { "name": "오마카세 코스", "description": "가성비 갑 오마카세의 진수" },
+        { "name": "모듬초밥", "description": "신선한 속초산 해산물 초밥" }
+      ],
+      "price_range": "₩₩₩",
+      "features": ["예약"],
+      "naver_reviews": 313,
+      "is_hotplace": false,
+      "group_friendly": false,
+      "naver_link": "https://map.naver.com/p/entry/place/1122173067",
+      "verified_date": "2026-02-10",
+      "highlights": [
+        "가성비 갑 오마카세 전문 스시집",
+        "10시~22시 연중무휴 영업",
+        "블로그 리뷰 411건, 방문자 리뷰 313건"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "한우근",
+      "image": null,
+      "category": "육류,한우오마카세",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시 엑스포로 121-12 2층",
+      "phone": "010-9770-1559",
+      "hours": {
+        "daily": "17:00 - 22:00"
+      },
+      "break_time": null,
+      "closed_days": "비정기 휴무",
+      "signature_menu": [
+        { "name": "한우根(근)코스", "price": "125,000원", "description": "대표 한우 오마카세 코스" },
+        { "name": "한우 special", "price": "100,000원", "description": "스페셜 한우 코스" },
+        { "name": "한우 구이 코스", "price": "75,000원", "description": "한우 구이 코스" }
+      ],
+      "price_range": "₩₩₩₩",
+      "features": ["주차", "예약", "단체이용가능", "유아의자"],
+      "naver_reviews": 264,
+      "is_hotplace": false,
+      "group_friendly": true,
+      "naver_link": "https://map.naver.com/p/entry/place/1350699391",
+      "verified_date": "2026-02-10",
+      "highlights": [
+        "기념일 맞춤 한우 오마카세 코스 (7.5~12.5만원)",
+        "저녁 전문 (17시~22시), 캐치테이블 예약",
+        "비정기 휴무, 사전 예약 필수"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "금이야옥이야",
+      "image": null,
+      "category": "칼국수,만두",
+      "location": "sokcho-city",
+      "location_name": "속초 시내",
+      "address": "강원 속초시 새마을길 53",
+      "phone": "033-632-5549",
+      "hours": {
+        "weekdays": "08:00 - 17:30",
+        "weekend": "08:00 - 18:30",
+        "last_order": "14:00 (평일)"
+      },
+      "break_time": "15:00 - 16:00 (평일)",
+      "closed_days": "월요일",
+      "signature_menu": [
+        { "name": "장칼국수", "description": "얼큰하고 깊은 맛의 장칼국수" },
+        { "name": "만두", "description": "수제 만두" }
+      ],
+      "price_range": "₩",
+      "features": ["포장"],
+      "naver_reviews": 1884,
+      "is_hotplace": true,
+      "group_friendly": false,
+      "naver_link": "https://map.naver.com/p/entry/place/1201250869",
+      "verified_date": "2026-02-10",
+      "highlights": [
+        "리뷰 1,800+건! 얼큰한 장칼국수 맛집",
+        "아침 8시 오픈, 평일 라스트오더 14시 주의",
+        "월요일 휴무, 주말은 18:30까지"
+      ]
+    }
   ],
   "locations": {
     "sokcho-city": {
@@ -242,6 +405,6 @@
       "description": "속초에서 차로 약 30분, 양양군 강현면"
     }
   },
-  "last_updated": "2026-02-08",
-  "total_verified": 7
+  "last_updated": "2026-02-10",
+  "total_verified": 12
 }

@@ -180,7 +180,37 @@
         "설악산 통창뷰 + 테라스, 주말 21시까지"
       ]
     }
+    ,
+    {
+      "id": 7,
+      "name": "스타벅스 영랑호리조트점",
+      "image": null,
+      "category": "카페",
+      "address": "강원 속초시 영랑호반길 170",
+      "phone": "1522-3232",
+      "hours": {
+        "weekdays": "08:00 - 21:00",
+        "weekend": "08:00 - 22:00"
+      },
+      "closed_days": null,
+      "view_type": ["영랑호뷰"],
+      "signature_menu": [
+        { "name": "아메리카노", "price": "4,500원" },
+        { "name": "카페라떼", "price": "5,000원" }
+      ],
+      "price_range": "₩₩",
+      "features": ["영랑호뷰", "주차", "넓은공간"],
+      "naver_reviews": 871,
+      "naver_rating": null,
+      "naver_link": "https://map.naver.com/p/entry/place/1591614346",
+      "verified_date": "2026-02-10",
+      "highlights": [
+        "영랑호 바로 앞 스타벅스",
+        "평일 21시, 주말 22시까지 영업",
+        "영랑호 산책 후 방문하기 좋은 위치"
+      ]
+    }
   ],
-  "last_updated": "2026-02-08",
-  "total_verified": 6
+  "last_updated": "2026-02-10",
+  "total_verified": 7
 }

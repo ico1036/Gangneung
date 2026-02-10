@@ -231,7 +231,7 @@
     {
       "id": 8,
       "name": "감자바우",
-      "image": null,
+      "image": "images/sokcho-restaurants/gamjabau.jpg",
       "category": "한식",
       "location": "sokcho-city",
       "location_name": "속초 시내",
@@ -265,7 +265,7 @@
     {
       "id": 9,
       "name": "대추한알가든쌈고기",
-      "image": null,
+      "image": "images/sokcho-restaurants/daechuhan.jpg",
       "category": "쌈고기,한식",
       "location": "sokcho-city",
       "location_name": "속초 시내",
@@ -297,7 +297,7 @@
     {
       "id": 10,
       "name": "호인스시",
-      "image": null,
+      "image": "images/sokcho-restaurants/hoinsushi.jpg",
       "category": "일식,오마카세",
       "location": "sokcho-city",
       "location_name": "속초 시내",
@@ -328,7 +328,7 @@
     {
       "id": 11,
       "name": "한우근",
-      "image": null,
+      "image": "images/sokcho-restaurants/hanugun.jpg",
       "category": "육류,한우오마카세",
       "location": "sokcho-city",
       "location_name": "속초 시내",
@@ -360,7 +360,7 @@
     {
       "id": 12,
       "name": "금이야옥이야",
-      "image": null,
+      "image": "images/sokcho-restaurants/geumiyaogiya.jpg",
       "category": "칼국수,만두",
       "location": "sokcho-city",
       "location_name": "속초 시내",

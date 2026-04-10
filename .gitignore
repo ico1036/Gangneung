@@ -1,5 +1,6 @@
-# Claude Code 설정 및 스킬 (개인 설정)
-.claude/
+# Claude Code 설정 (개인 설정 - skills만 허용)
+.claude/*
+!.claude/skills/
 *.skill
 
 # OS 파일
